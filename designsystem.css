@@ -1,0 +1,5 @@
+:root {
+    /* CSS Grid Styles */ 
+    --grid-columns: repeat(12, minmax(0px, 1fr));
+    --grid-column-gutter: 1.5rem; 
+}

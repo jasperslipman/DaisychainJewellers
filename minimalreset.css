@@ -1,0 +1,32 @@
+/* Minimal CSS Reset (adjusted for modern-normalize) */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strong, sub, sup, tt, var,
+b, u, i, span, center, dl, dt, dd,
+ol, ul, li, figure, figcaption,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed,
+footer, header, hgroup, menu, nav, section, summary {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
