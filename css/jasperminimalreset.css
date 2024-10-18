@@ -10,6 +10,7 @@ article, aside, canvas, details, embed,
 footer, header, hgroup, menu, nav, section, summary {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 ol, ul {

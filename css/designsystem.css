@@ -1,0 +1,449 @@
+/* Global Custom Propeties */ 
+
+:root {
+    /* Colour Pallete */
+    --off-black-color: #000000; 
+    --off-white-color: #FFFFFF; 
+    --main-background-color: white;
+    --secondary-background-color: black;
+    --main-foreground-color: lightblue; 
+    --secondary-foreground-color: darkblue;  
+    --accent-color: lightpink;
+    --success-color: green;
+    --error-color: red; 
+
+    /* Spacing */ 
+    --xs-gap: 0.25rem; 
+    --s-gap: 0.5rem;   
+    --m-gap: 1rem;    
+    --l-gap: 1.5rem;   
+    --xl-gap: 2rem;    
+    --xxl-gap: 2.5rem;
+    --xxxl-gap: 3rem;
+
+    /* Typography */
+    --heading-line-height: 1.5;
+    --body-line-height: 1.6;
+
+    --font-color-black: var(--off-black-color); 
+    --font-color-white: var(--off-white-color);
+    --body-font-color-primary: var(--off-black-color);
+    --heading-font-color-primary: var(--off-black-color);
+    --font-color-success: var(--success-color);
+    --font-color-error: var(--error-color);
+
+    --font-weight-bold: 700; 
+    --font-weight-semi-bold: 600;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+
+
+    --heading-font: 'HeadingCustomFont', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --body-font: 'BodyCustomFont', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; 
+
+    /* Buttons */
+    --button-padding: 0.5rem 1rem;
+    --button-primary-background-color: var(--secondary-foreground-color);
+    --button-secondary-background-color: var(--secondary-background-color);
+
+
+    /* Shadows */
+    --shadow-regular: 0 0px 4px rgba(0, 0, 0, 0.05);
+    
+    /* Z-Index */
+    --z-index-default: 1;
+    --z-index-dropdown: 1000;
+    --z-index-modal: 1050;
+    --z-index-tooltip: 1070;
+
+    
+
+}
+
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'HeadingCustomFont';
+    src: url('/fonts/HeadingCustomFont.woff2') format('woff2'),
+         url('/fonts/HeadingCustomFont.woff') format('woff');
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'BodyCustomFont';
+    src: url('/fonts/BodyCustomFont.woff2') format('woff2'),
+         url('/fonts/BodyCustomFont.woff') format('woff');
+    font-display: swap; 
+}
+
+/* Breakpoints */ 
+
+/* Media Query for Small Phones */
+@media (max-width: 479px) {
+    :root {
+        /* Section Padding */ 
+        --main-section-vertical-padding: 1.5rem; 
+        --sub-section-vertical-padding: 1rem;
+        --section-horizontal-padding: 1rem;
+        
+        /* Minor Second Mobile Scale CSS */
+        --h1-font-size: 1.625rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.375rem;
+        --h4-font-size: 1.25rem;
+        --h5-font-size: 1.125rem;
+        --h6-font-size: 1rem;
+        --body-large-font-size: 1rem;
+        --body-font-size: 0.875rem;
+        --body-small-font-size: 0.75rem;
+        --body-extra-small-font-size: 0.625rem;
+        --footer-h2-font-size: 0.875rem;
+        --footer-h3-font-size: 0.75rem;
+
+        /* CSS Grid */
+        --grid-columns: repeat(4, minmax(0px, 1fr));
+        --grid-column-gutter: 1rem;
+    }
+}
+
+/* Media Query for Large Phones */
+@media (min-width: 480px) and (max-width: 767px) {
+    :root {
+        /* Section Padding */ 
+        --main-section-vertical-padding: 1.5rem; 
+        --sub-section-vertical-padding: 1rem;
+        --section-horizontal-padding: 1.5rem; 
+        
+        /* Minor Second Scale CSS */
+        --h1-font-size: 1.75rem;
+        --h2-font-size: 1.625rem;
+        --h3-font-size: 1.5rem;
+        --h4-font-size: 1.375rem;
+        --h5-font-size: 1.25rem;
+        --h6-font-size: 1.125rem;
+        --body-large-font-size: 1.125rem;
+        --body-font-size: 1rem;
+        --body-small-font-size: 0.875rem;
+        --body-extra-small-font-size: 0.75rem;
+        --footer-h2-font-size: 1.125rem;
+        --footer-h3-font-size: 1rem;
+
+        /* CSS Grid */
+        --grid-columns: repeat(4, minmax(0px, 1fr));
+        --grid-column-gutter: 1rem;
+    }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1279px) {
+    :root {
+        /* Section Padding */ 
+        --main-section-vertical-padding: 2rem; 
+        --sub-section-vertical-padding: 1.5rem;
+        --section-horizontal-padding: 2rem; 
+
+        /* Major Second Scale CSS */
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.5rem;
+        --h4-font-size: 1.375rem;
+        --h5-font-size: 1.25rem;
+        --h6-font-size: 1.125rem;
+        --body-large-font-size: 1.125rem;
+        --body-font-size: 1rem;
+        --body-small-font-size: 0.875rem;
+        --body-extra-small-font-size: 0.75rem;
+        --footer-h2-font-size: 1.125rem;
+        --footer-h3-font-size: 1rem;
+
+        /* CSS Grid */
+        --grid-columns: repeat(8, minmax(0px, 1fr));
+        --grid-column-gutter: 1.5rem;
+    }
+}
+
+/* Media Query for Large Desktops */
+@media (min-width: 1280px) and (max-width: 1439px) {
+    :root {
+        /* Section Padding */ 
+        --main-section-vertical-padding: 3rem; 
+        --sub-section-vertical-padding: 2rem;
+        --section-horizontal-padding: 2.5rem;
+
+        /* Minor Third Scale CSS */
+        --h1-font-size: 3rem;
+        --h2-font-size: 2.5rem;
+        --h3-font-size: 2rem;
+        --h4-font-size: 1.75rem;
+        --h5-font-size: 1.5rem;
+        --h6-font-size: 1.25rem;
+        --body-large-font-size: 1.25rem;
+        --body-font-size: 1rem;
+        --body-small-font-size: 0.75rem;
+        --body-extra-small-font-size: 0.625rem;
+        --footer-h2-font-size: 1.25rem;
+        --footer-h3-font-size: 1rem;
+
+        /* CSS Grid */
+        --grid-columns: repeat(12, minmax(0px, 1fr));
+        --grid-column-gutter: 1.5rem;
+    }
+}
+
+/* Media Query for Extra Large Desktops */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    :root {
+        /* Section Padding */ 
+        --main-section-vertical-padding: 3rem; 
+        --sub-section-vertical-padding: 2rem;
+        --section-horizontal-padding: 3rem;
+
+        /* Major Third Scale CSS */
+        --h1-font-size: 4rem;  
+        --h2-font-size: 3rem;  
+        --h3-font-size: 2.5rem;  
+        --h4-font-size: 2rem;  
+        --h5-font-size: 1.5rem;  
+        --h6-font-size: 1.25rem;  
+        --body-large-font-size: 1.25rem;  
+        --body-font-size: 1rem;  
+        --body-small-font-size: 0.75rem;  
+        --body-extra-small-font-size: 0.625rem;  
+        --footer-h2-font-size: 1.25rem;  
+        --footer-h3-font-size: 1rem;
+
+        /* CSS Grid */
+        --grid-columns: repeat(12, minmax(0px, 1fr));
+        --grid-column-gutter: 1.5rem;
+    }
+}
+
+/* Media Query for Ultra-Wide Screens */
+@media (min-width: 1920px) {
+    :root {
+        /* Section Padding */ 
+        --main-section-vertical-padding: 6rem; 
+        --sub-section-vertical-padding: 2rem;
+        --section-horizontal-padding: 6rem;  
+        
+        /* Major Third XL Desktop Scale CSS */
+        --h1-font-size: 4rem;
+        --h2-font-size: 3rem;
+        --h3-font-size: 2.5rem;
+        --h4-font-size: 2rem;
+        --h5-font-size: 1.625rem;
+        --h6-font-size: 1.375rem;
+        --body-large-font-size: 1.375rem;
+        --body-font-size: 1.125rem;
+        --body-small-font-size: 0.875rem;
+        --body-extra-small-font-size: 0.75rem;
+        --footer-h2-font-size: 1.375rem;
+        --footer-h3-font-size: 1.125rem;
+
+        /* CSS Grid */
+        --grid-columns: repeat(12, minmax(0px, 1fr));
+        --grid-column-gutter: 1.5rem;
+    }
+}
+
+
+/* Global Styles */ 
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-weight-bold); 
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h5 {
+    font-size: var(--h5-font-size);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h6 {
+    font-size: var(--h6-font-size);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: var(--heading-line-height);
+    font-family: var(--heading-font);
+    color: var(--heading-font-color-primary);
+}
+
+p, a, span, li, label, input, textarea, select {
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    font-family: var(--body-font);
+    font-weight: var(--font-weight-regular);
+    color: var(--body-font-color-primary);
+}
+/* Global Classes */ 
+
+/* CSS Grid */
+.css-grid {
+    display: grid;
+    grid-template-columns: var(--grid-columns);
+    grid-column-gap: var(--grid-column-gutter);
+}
+
+/* Typography */
+.text-center {
+    text-align: center;
+}
+
+.body-font-color-primary {
+    color: var(--body-font-color-primary);
+}
+
+.heading-font-color-primary {
+    color: var(--heading-font-color-primary);
+}
+
+.font-color-success {
+    color: var(--font-color-success);
+}
+
+.font-color-error {
+    color: var(--font-color-error);
+}
+
+.font-color-white {
+    color: var(--font-color-white);
+}
+
+.font-color-black {
+    color: var(--font-color-black);
+}
+
+.font-weight-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.font-weight-semi-bold {
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.font-weight-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.font-weight-light {
+    font-weight: var(--font-weight-light);
+}
+
+/* Buttons */ 
+.button {
+    padding: var(--button-padding);
+    font-family: var(--body-font);
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--body-large-font-size);
+    background-color: var(--button-primary-background-color);
+    cursor: pointer;
+}
+
+.button.secondary {
+    background-color: var(--button-secondary-background-color);
+}
+
+/* Shadows */
+.shadow-regular {
+    box-shadow: var(--shadow-regular);
+}
+
+/* Section Padding */ 
+.main-section-padding {
+    padding: var(--main-section-vertical-padding) var(--section-horizontal-padding);
+}
+
+
+.sub-section-padding {
+    padding: var(--sub-section-vertical-padding) var(--section-horizontal-padding);
+}
+
+/* Spacing */
+.flex-gap-xs {
+    gap: var(--xs-gap);
+}
+
+.flex-gap-s {
+    gap: var(--s-gap);
+}
+
+.flex-gap-m {
+    gap: var(--m-gap);
+}
+
+.flex-gap-l {
+    gap: var(--l-gap);
+}
+
+.flex-gap-xl {
+    gap: var(--xl-gap);
+}
+
+.flex-gap-xxl {
+    gap: var(--xxl-gap);
+}
+
+/* Background Colours */
+.main-background-color {
+    background-color: var(--main-background-color);
+}
+
+.secondary-background-color {
+    background-color: var(--secondary-background-color);
+}
+
+/* Foreground Colours */
+.main-foreground-color {
+    color: var(--main-foreground-color);
+}
+
+.secondary-foreground-color {
+    color: var(--secondary-foreground-color);
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+.success-color {
+    color: var(--success-color);
+}
+
+.error-color {
+    color: var(--error-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
