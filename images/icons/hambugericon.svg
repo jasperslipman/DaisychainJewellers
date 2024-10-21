@@ -1,8 +1,9 @@
-<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="30" height="30" fill="#1E1E1E"/>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" fill="#transparent"/>
 <g id="Hamburger Group">
-<path id="Hamburger Line 3" d="M1 29H29" stroke="black" stroke-linecap="round"/>
-<path id="Hamburger Line 2" d="M1 15H29" stroke="black" stroke-linecap="round"/>
-<path id="Hamburger Line 1" d="M1 1H29" stroke="black" stroke-linecap="round"/>
+<path id="Hamburger Line 3" d="M2 30H30" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path id="Hamburger Line 2" d="M2 16H30" stroke="black" stroke-width="3" stroke-linecap="round"/>
+<path id="Hamburger Line 1" d="M2 2H30" stroke="black" stroke-width="3" stroke-linecap="round"/>
 </g>
 </svg>
+

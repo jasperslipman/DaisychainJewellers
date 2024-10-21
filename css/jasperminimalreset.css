@@ -31,3 +31,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+button {
+    all: unset; /* Resets all properties except display, removes default styling */
+    display: inline-block; /* Ensures it remains a block-level button */
+    cursor: pointer; /* Changes cursor to pointer to indicate it's clickable */
+  }
+

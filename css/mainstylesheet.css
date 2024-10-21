@@ -1,21 +1,16 @@
-.hamburger-icon {
-    cursor: pointer;
-    display: inline-block;
-  }
+/* Navigation bar styling */
+
+#navigation-bar {
+}
+
+#hamburger-menu {
+
+}
+
+#daisychain-logo {
+
+}
+
+#nav-links {
   
-  #Group\ 1 path {
-    transition: all 0.5s ease;
-  }
-  
-  /* Initial hamburger state */
-  .hamburger-icon.open #line1 {
-    transform: translateY(14px) rotate(45deg);
-  }
-  
-  .hamburger-icon.open #line2 {
-    opacity: 0;
-  }
-  
-  .hamburger-icon.open #line3 {
-    transform: translateY(-14px) rotate(-45deg);
-  }
+}

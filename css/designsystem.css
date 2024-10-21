@@ -2,15 +2,24 @@
 
 :root {
     /* Colour Pallete */
-    --off-black-color: #000000; 
-    --off-white-color: #FFFFFF; 
-    --main-background-color: white;
-    --secondary-background-color: black;
-    --main-foreground-color: lightblue; 
-    --secondary-foreground-color: darkblue;  
-    --accent-color: lightpink;
+    --off-black-color: #232320; 
+    --off-white-color: #FEFFF9; 
+    --main-background-color: #FEFFF9;
+    --secondary-background-color: #232320;
+    --main-foreground-color: #285729; 
+    --secondary-foreground-color: #2C5F2D;  
+    --accent-color: #FDFBE6;
     --success-color: green;
-    --error-color: red; 
+    --error-color: rgb(255, 0, 0); 
+
+    /* Padding */ 
+    --xs-padding: 0.25rem;
+    --s-padding: 0.5rem;
+    --m-padding: 1rem;
+    --l-padding: 1.5rem;
+    --xl-padding: 2rem;
+    --xxl-padding: 2.5rem;
+    --xxxl-padding: 3rem;
 
     /* Spacing */ 
     --xs-gap: 0.25rem; 
@@ -375,6 +384,106 @@ p, a, span, li, label, input, textarea, select {
     padding: var(--sub-section-vertical-padding) var(--section-horizontal-padding);
 }
 
+/* Padding */
+
+.padding-xs {
+    padding: var(--xs-padding);
+}
+
+.padding-s {
+    padding: var(--s-padding);
+}
+
+.padding-m {
+    padding: var(--m-padding);
+}
+
+.padding-l {
+    padding: var(--l-padding);
+}
+
+.padding-xl {
+    padding: var(--xl-padding);
+}
+
+.padding-xxl {
+    padding: var(--xxl-padding);
+}
+
+.padding-xxxl {
+    padding: var(--xxxl-padding);
+}
+
+.vertical-padding-xs {
+    padding-top: var(--xs-padding);
+    padding-bottom: var(--xs-padding);
+}
+
+.vertical-padding-s {
+    padding-top: var(--s-padding);
+    padding-bottom: var(--s-padding);
+}
+
+.vertical-padding-m {
+    padding-top: var(--m-padding);
+    padding-bottom: var(--m-padding);
+}
+
+.vertical-padding-l {
+    padding-top: var(--l-padding);
+    padding-bottom: var(--l-padding);
+}
+
+.vertical-padding-xl {
+    padding-top: var(--xl-padding);
+    padding-bottom: var(--xl-padding);
+}
+
+.vertical-padding-xxl {
+    padding-top: var(--xxl-padding);
+    padding-bottom: var(--xxl-padding);
+}
+
+.vertical-padding-xxxl {
+    padding-top: var(--xxxl-padding);
+    padding-bottom: var(--xxxl-padding);
+}
+
+.horizontal-padding-xs {
+    padding-left: var(--xs-padding);
+    padding-right: var(--xs-padding);
+}
+
+.horizontal-padding-s {
+    padding-left: var(--s-padding);
+    padding-right: var(--s-padding);
+}
+
+.horizontal-padding-m {
+    padding-left: var(--m-padding);
+    padding-right: var(--m-padding);
+}
+
+.horizontal-padding-l {
+    padding-left: var(--l-padding);
+    padding-right: var(--l-padding);
+}
+
+.horizontal-padding-xl {
+    padding-left: var(--xl-padding);
+    padding-right: var(--xl-padding);
+}
+
+.horizontal-padding-xxl {
+    padding-left: var(--xxl-padding);
+    padding-right: var(--xxl-padding);
+}
+
+.horizontal-padding-xxxl {
+    padding-left: var(--xxxl-padding);
+    padding-right: var(--xxxl-padding);
+}
+
 /* Spacing */
 .flex-gap-xs {
     gap: var(--xs-gap);
@@ -415,19 +524,19 @@ p, a, span, li, label, input, textarea, select {
 }
 
 .secondary-foreground-color {
-    color: var(--secondary-foreground-color);
+    background-color: var(--secondary-foreground-color);
 }
 
 .accent-color {
-    color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 .success-color {
-    color: var(--success-color);
+    background-color: var(--success-color);
 }
 
 .error-color {
-    color: var(--error-color);
+    background-color: var(--error-color);
 }
 
 
