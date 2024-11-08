@@ -12,31 +12,219 @@
     <link rel="stylesheet" href="../css/svg.css">
 </head>
 <body>   
-    
-    <section style="display: none;" id="navigation-bar-section" class="vertical-padding-m secondary-foreground-color">
-    
-        <div class="container">
-            <nav class="css-grid">
+    <!-- Navigation Bar --> 
+    <section id="navigation-bar-section" class="vertical-padding-m secondary-foreground-color section-horizontal-padding">
+        <div id="nav-container" class="container">
+            <nav id="navigation-bar" class="css-grid ">
                 <!-- Hamburger Menu Button -->
                 <button id="hamburger-menu" class="padding-s" aria-label="Open menu">
                     <object id="hamburger-icon" type="image/svg+xml" data="../images/icons/hambugericon.svg"></object>
                 </button>
 
                 <!-- Logo -->
+                
                 <a href="/" id="daisychain-logo" class="padding-s" aria-label="Homepage">
                     <object type="image/svg+xml" data="../images/logos/daisychain-logo-letter-group.svg"></object>
                 </a>
     
                 <!-- Navigation Links -->
-                <ul id="nav-links" class="nav-link-list">
-                    <li><a href="">Page 1</a></li>
-                    <li><a href="">Page 2</a></li>
-                    <li><a href="">Page 3</a></li>
-                </ul>
+                <div id="nav-menu-desktop"> 
+                    <ul id="nav-links" class="flex-gap-l">
+                        <li><a class="nav-link" href="">Home</a></li>
+                        <li><a class="nav-link" href="">Engagement & Wedding</a></li>
+                        <li><a class="nav-link" href="">Our Services</a></li>
+                        <li><a class="nav-link" href="">Ethics & Values</a></li>
+                        <li><a id="nav-cta" class="button" href="">Contact Us</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
-    
     </section>
+    <!-- Hero Section -->
+    <section id="hero-section" class="main-section-padding section-horizontal-padding main-background-color"> 
+        <div id="hero-container" class="container css-grid">
+            <div id="hero-card"> 
+                <h1>This is a Test</h1>
+                <p>this is a test this is </p>
+            </div>
+            
+        </div> 
+    </section>
+    <!-- About Us Section -->
+    <section id="about-us-section" class="section-horizontal-padding sub-section-padding main-foreground-color">
+        <div class="container css-grid"> 
+        <object id="daisychain-vector-flower" type="image/svg+xml" data="../images/logos/daisychain-vector-flower.svg"></object>
+        <div id="about-us-content" class="flex-gap-s"> 
+            <h2 class="text-center font-colour-primary">About Us</h2>
+            <p class="text-center body-font-size font-color-white">this is practice tet this is practice text this is practice text 
+                this is practice tet this is practice text this is practice text this is practice tet this is practice text this is practice text 
+                this is practicethis is practice text this is practice text
+                this is practice tet this is practice text this is practice text 
+                this is practice tet this is practice text this is practice text this is practice tet this is practice text this is practice text 
+                this is practicethis is practice text this is practice text 
+                this is practice tet this is practice text this is practice text 
+                this is practice tet this is practice text this is practice text this is practice tet this is practice text this is practice text 
+                this is practicethis is practice text this is practice text 
+                this is practice tet this is practice text this is practice text 
+                this is practice tet this is practice text this is practice text this is practice tet this is practice text this is practice text 
+                this is practicethis is practice text this is practice text
+            </p> 
+        </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="home-page-testimonials-section" class="section-horizontal-padding sub-section-padding main-background-color">
+        <div class="container css-grid">
+            <!-- Testimonial Text Holder --> 
+            <div id="testimonial-text-content" class="flex-gap-s">
+                        <h2 class="font-color-black"> Testimonials </h2>
+                        <p>this is practice tet this is practice text this is practice text 
+                            this is practice</p> 
+            </div>
+            <!-- Testimonial Cards -->
+             <div id="testimonial-card-one" class="testimonial-card"> 
+                        <div class="testimonial-card-content">
+                            <p class="testimonial-text">"I had a great experience with Daisychain Jewellers, they were very helpful and the ring was beautiful"</p>
+                            <p class="testimonial-author">- John Doe</p>
+                        </div>
+            </div>
+            <div id="testimonial-card-two" class="testimonial-card"> 
+                <div class="testimonial-card-content">
+                    <p class="testimonial-text">"I had a great experience with Daisychain Jewellers, they were very helpful and the ring was beautiful"</p>
+                    <p class="testimonial-author">- John Doe</p>
+                </div>
+            </div>
+            <div id="testimonial-card-three" class="testimonial-card"> 
+                <div class="testimonial-card-content">
+                    <p class="testimonial-text">"I had a great experience with Daisychain Jewellers, they were very helpful and the ring was beautiful"</p>
+                    <p class="testimonial-author">- John Doe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Services Section-->
+    <section id="services-section" class="section-horizontal-padding sub-section-padding main-background-color">
+        <div class="container css-grid">
+            <div id="service-card-one" class="service-card"> 
+                <img class="service-image" src="../images/photos/workimagetemp.webp" alt="Service Image">
+                <div class="service-text-content">
+                    <h2 class="font-color-black">Engagement & Wedding</h2>
+                    <p>dsjhahkdashkdhhs</p>
+                </div>
+            </div>
+            <div id="service-card-two" class="service-card"> 
+                <div class="service-text-content">
+                    <h2 class="font-color-black">Engagement & Wedding</h2>
+                    <p>dsjhahkdashkdhhs</p>
+                </div>
+                <img class="service-image" src="../images/photos/workimagetemp.webp" alt="Service Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Section-->
+    <section id="seasonal-section" class="section-horizontal-padding sub-section-padding main-background-color">
+        <div class="container css-grid">
+            <div id="seasonal-content" class="flex-gap-s text-center">
+                <h2 class="font-color-black">Seasonal</h2>
+                <p class="text-center body-font-size">this is practice tet this is practice text this is practice text 
+                    this is practice tet this is practice text this is practice text this is practice tet this is practice text this is practice text 
+                    this is practicethis is practice text this is practice text
+                    this is practice tet this is practice text this is practice text 
+                    this is practice tet this is practice text this is practice text this is practice tet this is practice text this is practice text 
+                    this is practicet
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Us Section-->
+    <section id="contact-us-section" class="section-horizontal-padding sub-section-padding main-background-color">
+        <div class="container css-grid">
+            <div id="contact-us-title-box" class="flex-gap-s text-center">
+                <h2 class="font-color-black">Contact Us</h2>
+                <p>this is practice tet this is practice text this is practice text 
+                    this is practice tet this is practice tet this is practice text this is practice text 
+                    this is practice tet</p> 
+            </div>
+            <div id="visit-us-box" class="flex-gap-m">
+                <h3 class="font-color-black text-center">Visit The Shop</h3>
+                <div class="flex-gap-s flex-column"> 
+                    <h4 class="font-color-black">Opening Hours</h4>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                </div>
+                <div class="flex-gap-s flex-column"> 
+                    <h4 class="font-color-black">Store Address</h4>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                </div>
+            </div>
+            <div id="contact-us-box" class="flex-gap-m">
+                <h3 class="font-color-black text-center">Get In Touch</h3>
+                <div class="flex-gap-s flex-column"> 
+                    <h4 class="font-color-black">Telephone</h4>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                </div>
+                <div class="flex-gap-s flex-column"> 
+                    <h4 class="font-color-black">Email</h4>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                </div>
+                <div class="flex-gap-s flex-column"> 
+                    <h4 class="font-color-black">Social Media</h4>
+                    <span>Monday - Friday: 9AM-5PM</span>
+                </div>
+            </div>
+            <img id="daisychain-map-home-image" src="../images/photos/daisychain-map.png" alt="Contact Us Image">
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer-section" class="section-horizontal-padding vertical-padding-m main-foreground-color">
+        <div class="container css-grid">
+            <div id="footer-logo-div" class="footer-div flex-column flex-gap-s padding-l"> 
+                <object id="footer-logo" type="image/svg+xml" data="../images/logos/daisychain-vector-flower.svg"></object>
+                <p class="body-small-font-size text-center">Daisychain Jewellers Daisychain Jewellers Daisychain Jewellers Daisychain Jewellers</p>
+                
+
+            </div>
+            <div class="footer-div"> 
+                <h2 class="body-large-font-size text-center">Visit Us</h2>
+                <div class="flex-column flex-gap-xs">
+                    <h3 class="body-font-size">Business Hours</h3>
+                    <span>Monday - Friday 9am-5pm</span>
+                </div>
+                
+
+            </div>
+            <div class="footer-div"> 
+                <h2 class="body-large-font-size text-center">Visit Us</h2>
+                <div class="flex-column flex-gap-xs">
+                    <h3 class="body-font-size">Business Hours</h3>
+                    <span>Monday - Friday 9am-5pm</span>
+                </div>
+                
+
+            </div>
+            <div class="footer-div"> 
+                <h2 class="body-large-font-size text-center">Visit Us</h2>
+                <div class="flex-column flex-gap-xs">
+                    <h3 class="body-font-size">Business Hours</h3>
+                    <span>Monday - Friday 9am-5pm</span>
+                </div>
+                
+
+            </div>
+                
+
+
+    
+
+    
+
+
 
 </body> 
 
