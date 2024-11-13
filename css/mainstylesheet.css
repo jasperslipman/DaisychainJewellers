@@ -6,16 +6,16 @@
     display: none;
 }
 
-#daisychain-logo {
+#homepage-logo-link {
     grid-column: 1/3;  
     grid-row: 1;
-    width: 90%;
+    width: 70%;
     align-self: center;
     justify-self: start;
     display: flex;
 }
 
-#nav-links {
+#primary-nav-links {
   display: flex;
   flex-direction: row; 
   align-items: center;
@@ -25,9 +25,11 @@
     font-size: var(--body-large-font-size);
     color: var(--font-color-primary);
     font-weight: var(--font-weight-regular); 
+    padding: var(--s-gap);
+    font-family: var(--heading-font);
 }
 
-#nav-menu-desktop {
+#desktop-nav-menu {
     grid-column: 3 / 13;
     grid-row: 1;
     align-self: center;
@@ -36,17 +38,33 @@
 
 /* Hero Section Styling */
 
-#hero-container {
+#hero-section {
     width: 100%;
-    background-image: ;
-    height: 60vh;
+    background-image: url("../images/photos/daisybackgroundtemp.webp");
+    height: 80svh;
+    
 }
 
+#hero-container {
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
 #hero-card{ 
     align-self: center;
-    padding: var(--l-gap);
-    background-color: black;
+    padding: var(--xl-gap);
+    background-color: var(--accent-color);
     grid-column: 1 / 7;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--rounded-corners);
+    box-shadow: var(--card-shadow-large);
+}
+
+#hero-paragraph {
+    font-size: var(--body-large-font-size);
 }
 
 /* About Us Section Styling */ 
@@ -75,24 +93,35 @@
 }
 
 #testimonial-card-one {
-    grid-column: 2 / 5;
-    grid-row: 2;
+    flex: 1; 
 }
 
 #testimonial-card-two {
-    grid-column: 5 / 9;
-    grid-row: 2;
+    flex: 1; 
+    height: 80%;
 }
 
 #testimonial-card-three {
-    grid-column: 9 / 12;
+    flex: 1; 
+    height: 80%;
+}
+
+#flex-cards {
+    grid-column: 2 / 12;
     grid-row: 2;
+    gap: var(--grid-gap); 
 }
-
 .testimonial-card {
-    padding: var(--l-gap);
+    padding: var(--xl-gap);
+    box-shadow: var(--card-shadow-regular);
+    border-radius: var(--rounded-corners);
+    justify-content: center;
+    align-self: center;
 }
 
+#testimonial-card-container {
+    row-gap: var(--xxl-gap)
+}
 .testimonial-card-content {
     display: flex;
     flex-direction: column;
@@ -103,7 +132,18 @@
     font-size: var(--body-large-font-size);
     color: var(--font-color-black);
     font-weight: var(--font-weight-regular);
-    text-align: center;
+    text-align: ;
+}
+
+.testimonial-text.secondary {
+    font-size: var(--body-large-font-size);
+    color: var(--font-color-black);
+    font-weight: var(--font-weight-regular);
+    text-align: ;
+}
+
+.daisy-review-image {
+    height: var(--h3-font-size);
 }
 
 /* Services Section Styling */
@@ -133,11 +173,11 @@
 .service-text-content {
     display: flex;
     flex-direction: column;
-    padding: var(--l-gap);
+    padding: var(--xxxl-gap);
     gap: var(--m-gap);
-    align-items: center;
+    align-items: start;
     width: 50%;
-    gap: var(--s-gap);
+    align-self: center;
 }
 
 #service-card-two {
@@ -146,11 +186,18 @@
 }
 
 /* Seasonal Section Styling */
+#seasonal-section {
+
+}
 
 #seasonal-content {
     grid-column: 3 / 11;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    aspect-ratio: 16 / 4.5;
 }
 
 /* Contact Us Section Styling */ 
@@ -174,6 +221,9 @@
     grid-row: 3; 
     object-fit: cover;
     width: 100%;
+    aspect-ratio: 16 / 4.5;
+    border-radius: var(--rounded-corners);
+    box-shadow: var(--shadow-small);
     
 }
 
