@@ -9,7 +9,7 @@
 #homepage-logo-link {
     grid-column: 1/3;  
     grid-row: 1;
-    width: 70%;
+    width: 100%;
     align-self: center;
     justify-self: start;
     display: flex;
@@ -84,7 +84,7 @@
 /* Testimonials Section Styling */ 
 
 #testimonial-text-content {
-    grid-column: 4 / 10;
+    grid-column: 3 / 11;
     grid-row: 1; 
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@
 }
 
 #flex-cards {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     grid-row: 2;
     gap: var(--grid-gap); 
 }
@@ -129,7 +129,7 @@
 }
 
 .testimonial-text {
-    font-size: var(--body-large-font-size);
+    font-size: var(--body-font-size);
     color: var(--font-color-black);
     font-weight: var(--font-weight-regular);
     text-align: ;
@@ -227,6 +227,16 @@
     
 }
 
+.opening-hours-table {
+    display: flex;
+    flex-direction: row;
+    gap: var(--xl-gap);
+    
+}
+
+.opening-days {
+    align-items: start;
+}
 /* Footer Div */ 
 
 #footer-logo-div {
@@ -236,6 +246,9 @@
 
 .footer-div {
     grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
 }
 
 #footer-logo {

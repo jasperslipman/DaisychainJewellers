@@ -1,4 +1,68 @@
-/* Global Custom Propeties */ 
+/* Typography Classes */
+.body-font-size {
+    font-size: var(--body-font-size);
+}
+
+.body-large-font-size {
+    font-size: var(--body-large-font-size);
+}
+
+.body-small-font-size {
+    font-size: var(--body-small-font-size);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-color-primary {
+    color: var(--font-color-primary);
+}
+
+.font-color-black {
+    color: var(--font-color-black);
+}
+
+.font-color-white {
+    color: var(--font-color-white);
+}
+.font-color-foreground {
+    color: var(--font-color-foreground);
+}
+
+.font-color-success {
+    color: var(--font-color-success);
+}
+
+.font-color-error {
+    color: var(--font-color-error);
+}
+
+.font-color-white {
+    color: var(--font-color-white);
+}
+
+.font-color-black {
+    color: var(--font-color-black);
+}
+
+.font-weight-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.font-weight-semi-bold {
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.font-weight-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.font-weight-light {
+    font-weight: var(--font-weight-light);
+}
+
+/* Global Custom Propeties */
 
 :root {
     /* Colour Pallete */
@@ -327,70 +391,6 @@ p, a, span, li, label, input, textarea, select {
     grid-template-columns: var(--grid-columns);
     grid-column-gap: var(--grid-column-gutter);
     row-gap: var(--grid-gap);
-}
-f
-/* Typography */
-.body-font-size {
-    font-size: var(--body-font-size);
-}
-
-.body-large-font-size {
-    font-size: var(--body-large-font-size);
-}
-
-.body-small-font-size {
-    font-size: var(--body-small-font-size);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.font-color-primary {
-    color: var(--font-color-primary);
-}
-
-.font-color-black {
-    color: var(--font-color-black);
-}
-
-.font-color-white {
-    color: var(--font-color-white);
-}
-.font-color-foreground {
-    color: var(--font-color-foreground);
-}
-
-.font-color-success {
-    color: var(--font-color-success);
-}
-
-.font-color-error {
-    color: var(--font-color-error);
-}
-
-.font-color-white {
-    color: var(--font-color-white);
-}
-
-.font-color-black {
-    color: var(--font-color-black);
-}
-
-.font-weight-bold {
-    font-weight: var(--font-weight-bold);
-}
-
-.font-weight-semi-bold {
-    font-weight: var(--font-weight-semi-bold);
-}
-
-.font-weight-regular {
-    font-weight: var(--font-weight-regular);
-}
-
-.font-weight-light {
-    font-weight: var(--font-weight-light);
 }
 
 /* Buttons */ 
