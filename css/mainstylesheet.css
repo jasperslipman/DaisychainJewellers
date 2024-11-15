@@ -40,8 +40,10 @@
 
 #hero-section {
     width: 100%;
-    background-image: url("../images/photos/daisybackgroundtemp.webp");
-    height: 80svh;
+    background-image: url("../images/photos/daisychain-background.jpg");
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
     
 }
 
