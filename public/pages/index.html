@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daisychain Jewellers</title>
+    <link rel="stylesheet" href="../css/jasperminimalreset.css">
     <link rel="stylesheet" href="../css/jaspernormalize.css">
     <link rel="stylesheet" href="../css/designsystem.css">
-    <link rel="stylesheet" href="../css/jasperminimalreset.css">
-    <link rel="stylesheet" href="../css/animations.css">
     <link rel="stylesheet" href="../css/mainstylesheet.css">
-    <link rel="stylesheet" href="../css/svg.css">
+    <link rel="stylesheet" href="../css/animations.css">
 </head>
 <body>   
-    <!-- Navigation Bar --> 
     <header id="main-navigation-header" class="vertical-padding-m secondary-foreground-color section-horizontal-padding">
         <div id="main-nav-container" class="container">
             <nav id="primary-navigation" class="css-grid" aria-label="Main navigation">
                 <!-- Logo -->
-                
                 <a href="/" id="homepage-logo-link" class="padding-s" aria-label="Homepage">
                     <object id="daisychain-letter-logo" type="image/svg+xml" data="../images/logos/daisychain-logo-letter-group.svg"></object>
                 </a>
     
                 <!-- Navigation Links -->
                 <div id="desktop-nav-menu"> 
-                    <ul id="primary-nav-links" class="flex-gap-xs" role="menubar">
-                        <li role="none"><a class="nav-link" href="" aria-current="page">Home</a></li>
-                        <li role="none"><a class="nav-link" href="" >Engagement & Wedding</a></li>
-                        <li role="none"><a class="nav-link" href="">Our Services</a></li>
-                        <li role="none"><a class="nav-link" href="">Ethics & Values</a></li>
-                        <li role="none"><a id="contact-us-cta-button" class="button" href="">Contact Us</a></li>
+                    <ul id="primary-nav-links" role="menubar">
+                        <li role="none"><a class="nav-link link-wrapper" href="/" aria-current="page">Home</a></li>
+                        
+                        <li role="none" class="nav-dropdown link-wrapper">
+                            <a class="nav-link" href="/engagement-wedding">Engagement & Wedding</a>
+                            <object class="dropdown-icon" type="image/svg+xml" data="../images/icons/daisychain-drop-down-icon.svg"></object>
+                            <!-- Dropdown Menu Placeholder -->
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="none"><a href="/engagement">Engagement</a></li>
+                                <li role="none"><a href="/wedding">Wedding</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li role="none" class="nav-dropdown link-wrapper">
+                            <a class="nav-link" href="/our-services">Our Services</a>
+                            <object class="dropdown-icon" type="image/svg+xml" data="../images/icons/daisychain-drop-down-icon.svg"></object>
+                            <!-- Dropdown Menu Placeholder -->
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="none"><a href="/service1">Service 1</a></li>
+                                <li role="none"><a href="/service2">Service 2</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li role="none"><a class="nav-link link-wrapper" href="/ethics-values">Ethics & Values</a></li>
+                        <li role="none"><a id="contact-us-cta-button" class="button" href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
+    
+                <!-- Hamburger Menu Placeholder for Mobile -->
+                <button id="hamburger-menu-button" aria-label="Open navigation menu">
+                    <!-- Hamburger Icon SVG or Image -->
+                </button>
             </nav>
         </div>
     </header>

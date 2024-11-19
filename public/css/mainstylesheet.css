@@ -1,11 +1,4 @@
-/* Navigation bar styling */
-
-
-#hamburger-menu {
-    
-    display: none;
-}
-
+/* Navigation Bar Styling */ 
 #homepage-logo-link {
     grid-column: 1/3;  
     grid-row: 1;
@@ -15,26 +8,56 @@
     display: flex;
 }
 
-#primary-nav-links {
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-}
-
-.nav-link {
-    font-size: var(--body-large-font-size);
-    color: var(--font-color-primary);
-    font-weight: var(--font-weight-regular); 
-    padding: var(--s-gap);
-    font-family: var(--heading-font);
-}
-
 #desktop-nav-menu {
     grid-column: 3 / 13;
     grid-row: 1;
     align-self: center;
     justify-self: end;
 }
+
+#primary-nav-links {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: var(--xs-gap);
+}
+
+.nav-link {
+    font-size: var(--body-large-font-size);
+    color: var(--font-color-primary);
+    font-weight: var(--font-weight-regular); 
+    font-family: var(--heading-font);
+}
+
+.link-wrapper {
+    padding: var(--s-padding);
+}
+    /* Dropdown Menu Styling */
+    .nav-dropdown {
+        display: flex;
+        flex-direction: row;
+        gap: var(--xs-gap);
+    }
+
+    .dropdown-icon {
+        width: auto;
+        height: 0.5rem;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+
+    /* Hamburger Menu Styling */
+
+    #hamburger-menu-button {
+    display: none;
+    }
+
+
+
 
 /* Hero Section Styling */
 
@@ -68,6 +91,7 @@
 #hero-paragraph {
     font-size: var(--body-large-font-size);
 }
+
 
 /* About Us Section Styling */ 
 
