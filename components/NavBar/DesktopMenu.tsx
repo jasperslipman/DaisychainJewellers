@@ -1,13 +1,11 @@
-// components/DesktopNavMenu.tsx
-
 import React from 'react';
 import DropdownMenu from './DropdownMenu';
 import styles from './NavBar.module.css';
 
 const DesktopNavMenu: React.FC = () => {
     return (
-        <div id="desktop-nav-menu" className={styles.desktopNavMenu}>
-            <ul id="primary-nav-links" className={styles.primaryNavLinks}>
+        <div className={styles.desktopNavMenu}>
+            <ul className={styles.primaryNavLinks}>
                 <li>
                     <a
                         className={`${styles.navLink} ${styles.linkWrapper}`}
