@@ -1,8 +1,7 @@
-import '../public/css/jasperminimalreset.css';
-import '../public/css/jaspernormalize.css';
-import '../public/css/animations.css';
-import '../public/css/designsystem.css';
-import '../public/css/mainstylesheet.css';
+import './../styles/jasperminimalreset.css';
+import './../styles/jaspernormalize.css';
+import './../styles/designsystem.css';
+import './../styles/mainstylesheet.css';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {

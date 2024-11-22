@@ -149,17 +149,17 @@
 
 @font-face {
     font-family: 'HeadingCustomFont';
-    src: url('../fonts/noto-heading-font.woff2') format('woff2'),
-         url('../fonts/noto-heading-font.woff') format('woff');
+    src: url('../public/fonts/noto-heading-font.woff2') format('woff2'),
+         url('../public/fonts/noto-heading-font.woff') format('woff');
     font-display: swap; 
 }
 
-@font-face {
+/* @font-face {
     font-family: 'BodyCustomFont';
     src: url('/fonts/BodyCustomFont.woff2') format('woff2'),
          url('/fonts/BodyCustomFont.woff') format('woff');
     font-display: swap; 
-}
+} */
 
 /* Breakpoints */ 
 

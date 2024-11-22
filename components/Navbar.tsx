@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import DaisychainLogo from '../public/images/logos/daisychain-logo-letter-group.svg';
-import HamburgerMenu from './HamburgerMenu';
+import HamburgerMenu from './NavBar/HamburgerMenu';
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
