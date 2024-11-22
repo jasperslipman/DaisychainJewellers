@@ -1,134 +1,61 @@
-// components/Navbar/DesktopMenu.tsx
+// components/DesktopNavMenu.tsx
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import React from 'react';
+import DropdownMenu from './DropdownMenu';
 import styles from './NavBar.module.css';
-import DropdownIcon from '../../assets/logos/daisychain-drop-down-icon.svg';
 
-const DesktopMenu: React.FC = () => {
-    const [isEngagementDropdownOpen, setEngagementDropdownOpen] = useState(false);
-    const [isServicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-
-    const toggleEngagementDropdown = () => {
-        setEngagementDropdownOpen((prev) => !prev);
-    };
-
-    const toggleServicesDropdown = () => {
-        setServicesDropdownOpen((prev) => !prev);
-    };
-
-    // Close dropdowns when clicking outside
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            const target = event.target as HTMLElement;
-            if (!target.closest(`.${styles.navDropdown}`)) {
-                setEngagementDropdownOpen(false);
-                setServicesDropdownOpen(false);
-            }
-        };
-
-        document.addEventListener('click', handleClickOutside);
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, []);
-
-    // Close dropdowns on Escape key press
-    useEffect(() => {
-        const handleKeyDown = (e: KeyboardEvent) => {
-            if (e.key === 'Escape') {
-                setEngagementDropdownOpen(false);
-                setServicesDropdownOpen(false);
-            }
-        };
-
-        document.addEventListener('keydown', handleKeyDown);
-        return () => {
-            document.removeEventListener('keydown', handleKeyDown);
-        };
-    }, []);
-
+const DesktopNavMenu: React.FC = () => {
     return (
-        <div id="desktop-nav-menu">
-            <ul id="primary-nav-links" role="menubar" className={styles.primaryNavLinks}>
-                <li role="none" className={styles.navItem}>
-                    <Link href="/">
-                        <a role="menuitem" className={styles.navLink} aria-current="page">
-                            Home
-                        </a>
-                    </Link>
-                </li>
-
-                <li role="none" className={`${styles.navDropdown} ${styles.navItem}`} aria-haspopup="true" aria-expanded={isEngagementDropdownOpen}>
-                    <button
-                        className={styles.navLinkButton}
-                        onClick={toggleEngagementDropdown}
-                        aria-haspopup="true"
-                        aria-expanded={isEngagementDropdownOpen}
+        <div id="desktop-nav-menu" className={styles.desktopNavMenu}>
+            <ul id="primary-nav-links" className={styles.primaryNavLinks}>
+                <li>
+                    <a
+                        className={`${styles.navLink} ${styles.linkWrapper}`}
+                        href="/"
+                        aria-current="page"
                     >
-                        Engagement &amp; Wedding
-                        <DropdownIcon className={styles.dropdownIcon} aria-hidden="true" />
-                    </button>
-                    {isEngagementDropdownOpen && (
-                        <ul className={styles.dropdownMenu} role="menu">
-                            <li role="none" className={styles.dropdownItem}>
-                                <Link href="/engagement">
-                                    <a role="menuitem" className={styles.dropdownLink}>Engagement</a>
-                                </Link>
-                            </li>
-                            <li role="none" className={styles.dropdownItem}>
-                                <Link href="/wedding">
-                                    <a role="menuitem" className={styles.dropdownLink}>Wedding</a>
-                                </Link>
-                            </li>
-                        </ul>
-                    )}
+                        Home
+                    </a>
                 </li>
 
-                <li role="none" className={`${styles.navDropdown} ${styles.navItem}`} aria-haspopup="true" aria-expanded={isServicesDropdownOpen}>
-                    <button
-                        className={styles.navLinkButton}
-                        onClick={toggleServicesDropdown}
-                        aria-haspopup="true"
-                        aria-expanded={isServicesDropdownOpen}
+                <DropdownMenu
+                    id="engagement-wedding-menu"
+                    title="Engagement & Wedding"
+                    items={[
+                        { label: 'Engagement', link: '/engagement' },
+                        { label: 'Wedding', link: '/wedding' },
+                    ]}
+                />
+
+                <DropdownMenu
+                    id="our-services-menu"
+                    title="Our Services"
+                    items={[
+                        { label: 'Service 1', link: '/service1' },
+                        { label: 'Service 2', link: '/service2' },
+                    ]}
+                />
+
+                <li>
+                    <a
+                        className={`${styles.navLink} ${styles.linkWrapper}`}
+                        href="/ethics-values"
                     >
-                        Our Services
-                        <DropdownIcon className={styles.dropdownIcon} aria-hidden="true" />
-                    </button>
-                    {isServicesDropdownOpen && (
-                        <ul className={styles.dropdownMenu} role="menu">
-                            <li role="none" className={styles.dropdownItem}>
-                                <Link href="/service1">
-                                    <a role="menuitem" className={styles.dropdownLink}>Service 1</a>
-                                </Link>
-                            </li>
-                            <li role="none" className={styles.dropdownItem}>
-                                <Link href="/service2">
-                                    <a role="menuitem" className={styles.dropdownLink}>Service 2</a>
-                                </Link>
-                            </li>
-                        </ul>
-                    )}
+                        Ethics & Values
+                    </a>
                 </li>
-
-                <li role="none" className={styles.navItem}>
-                    <Link href="/ethics-values">
-                        <a role="menuitem" className={styles.navLink}>
-                            Ethics &amp; Values
-                        </a>
-                    </Link>
-                </li>
-
-                <li role="none" className={styles.navItem}>
-                    <Link href="/contact">
-                        <a role="menuitem" id="contact-us-cta-button" className={`${styles.button} ${styles.navLink}`}>
-                            Contact Us
-                        </a>
-                    </Link>
+                <li>
+                    <a
+                        id="contact-us-cta-button"
+                        className={`button ${styles.linkWrapper}`}
+                        href="/contact"
+                    >
+                        Contact Us
+                    </a>
                 </li>
             </ul>
         </div>
     );
 };
 
-export default DesktopMenu;
+export default DesktopNavMenu;

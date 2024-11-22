@@ -1,12 +1,13 @@
-/* Navigation Bar Styling */ 
-#main-navigation-header {
+/* Navbar Container */
+.navbarHeader {
     padding-top: var(--m-padding);
     padding-bottom: var(--m-padding);
     background-color: var(--secondary-foreground-color);
 }
 
-#homepage-logo-link {
-    grid-column: 1/3;  
+/* Logo Link */
+.homepageLogoLink {
+    grid-column: 1 / 3;
     grid-row: 1;
     width: 100%;
     align-self: center;
@@ -15,67 +16,90 @@
     padding: var(--s-padding);
 }
 
-#desktop-nav-menu {
+/* Desktop Nav Menu */
+.desktopNavMenu {
     grid-column: 3 / 13;
     grid-row: 1;
     align-self: center;
     justify-self: end;
-    display: none;
+    display: flex;
 }
 
-#primary-nav-links {
+/* Primary Nav Links */
+.primaryNavLinks {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     gap: var(--xs-gap);
 }
 
-.nav-link {
+/* Navigation Links */
+.navLink {
     font-size: var(--body-large-font-size);
     color: var(--font-color-primary);
-    font-weight: var(--font-weight-regular); 
+    font-weight: var(--font-weight-regular);
     font-family: var(--heading-font);
+    display: flex;
+    align-items: center;
 }
 
-.link-wrapper {
+.linkWrapper {
     padding: var(--s-padding);
 }
-    /* Dropdown Menu Styling */
-    .nav-dropdown {
-        display: flex;
-        flex-direction: row;
-        gap: var(--xs-gap);
-    }
 
-    .dropdown-icon {
-        width: auto;
-        height: 0.5rem;
-        align-self: center;
-        justify-self: center;
-    }
+/* Dropdown */
+.navDropdown {
+    position: relative;
+}
 
-    .dropdown-menu {
-        display: none;
-    }
+.dropdownIcon {
+    align-self: center;
+    justify-self: center;
+}
 
-    /* Hamburger Menu Styling */
+/* Dropdown Menu */
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    background-color: var(--secondary-foreground-color);
+    padding: var(--s-padding);
+    z-index: 1000;
+    width: 100%;
+}
 
-    #hamburger-menu-button {
-        grid-column: 12 / 12;
-        align-self: center;
-        justify-self: end;
-        padding: var(--s-padding);
-        
-    }
+.navDropdown.open .dropdownMenu {
+    display: block;
+}
 
-/* Hamburger */
+/* Dropdown Menu Items */
+.dropdownMenuItem {
+    padding: var(--s-padding);
+}
+
+.dropdownMenuLink {
+    color: var(--font-color-primary);
+    text-decoration: none;
+    display: block;
+    padding: var(--s-padding);
+}
+
+.dropdownMenuLink:hover {
+    background-color: var(--primary-color);
+    color: var(--font-color-secondary);
+}
+
+/* Hamburger Styles */
+
+.hamburgerMenuButton {
+    display: none;
+}
+
 .hamburger {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 2.5rem;
     height: 2rem;
-    
 }
 
 .bar {
@@ -85,7 +109,6 @@
     transition: all 0.3s ease-in-out;
     transform-origin: center;
     border-radius: var(--rounded-corners);
-
 }
 
 /* Animation when the menu is open */
