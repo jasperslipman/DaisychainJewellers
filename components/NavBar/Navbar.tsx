@@ -4,6 +4,7 @@ import DaisychainLogo from '../../public/images/logos/daisychain-logo-letter-gro
 import HamburgerMenu from './HamburgerMenu';
 import DesktopNavMenu from './DesktopMenu';
 import styles from './NavBar.module.css';
+import MobileNavMenu from './MobileMenu';
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -35,11 +36,13 @@ const Navbar: React.FC = () => {
 
                     {/* Hamburger Menu for Mobile */}
                     <HamburgerMenu
-                        id="hamburger-menu-button"
                         isOpen={isMenuOpen}
                         toggleMenu={toggleMenu}
-                        className={styles.hamburgerMenuButton}
+                        className={styles.hamburgerButton}
                     />
+
+                    {/* Mobile Navigation Menu */}
+                    <MobileNavMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
                 </nav>
             </div>
         </header>

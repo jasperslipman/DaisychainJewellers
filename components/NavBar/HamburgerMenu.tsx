@@ -6,21 +6,21 @@ interface HamburgerMenuProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     toggleMenu: () => void;
   }
   
-  const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu, ...rest }) => {
+  const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu, className, ...rest }) => {
     return (
-      <button
-        className={`${styles.hamburger} ${isOpen ? styles.open : ''}`}
-        onClick={toggleMenu}
-        aria-label={isOpen ? 'Close menu' : 'Open menu'}
-        aria-expanded={isOpen}
-        aria-controls="mobile-menu"
-        {...rest} 
-      >
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-        <span className={styles.bar}></span>
-      </button>
+        <button
+            className={`${styles.hamburger} ${isOpen ? styles.open : ''} ${className}`}
+            onClick={toggleMenu}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
+            {...rest} 
+        >
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+        </button>
     );
-  };
+};
   
   export default HamburgerMenu;
