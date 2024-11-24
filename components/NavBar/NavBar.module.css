@@ -3,6 +3,14 @@
     padding-top: var(--m-padding);
     padding-bottom: var(--m-padding);
     background-color: var(--secondary-foreground-color);
+    transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    opacity: 1; /* Full opacity by default */
+}
+
+/* Scrolling State */
+.scrolling {
+    opacity: 0.8; /* Reduce opacity to 80% when scrolling */
+    
 }
 
 /* Logo Link */
