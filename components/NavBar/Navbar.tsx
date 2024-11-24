@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import DaisychainLogo from '../../public/images/logos/daisychain-logo-letter-group.svg';
 import HamburgerMenu from './HamburgerMenu';

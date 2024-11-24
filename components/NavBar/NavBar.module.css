@@ -94,7 +94,6 @@
 }
 
 /* Hamburger Styles */
-
 .hamburgerButton {
     grid-column: 12 / 13;
     align-self: center;
@@ -121,7 +120,6 @@
 
 /* Animations */ 
 
-
 /* Animation when the  Hamburger Menu is open */
 .open .bar:nth-child(1) {
     transform: rotate(45deg) translate(0.625rem, 0.625rem);
@@ -141,7 +139,7 @@
     transition: transform 0.5s ease-in-out;
 }
 
-/* Define the slide-in animation */
+/* slide-in animation */
 @keyframes slideDown {
     from {
       opacity: 0;
@@ -153,7 +151,6 @@
     }
   }
   
-  /* Define the slide-out animation (optional) */
   @keyframes slideUp {
     from {
       opacity: 1;
@@ -169,7 +166,6 @@
     animation: slideDown 0.5s forwards;
   }
   
-  /* Optional: Animate when the menu is hidden */
   .navDropdown .dropdownMenu.hidden {
     animation: slideUp 0.5s forwards;
   }
