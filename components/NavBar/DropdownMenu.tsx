@@ -16,7 +16,6 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ id, title, items }) => {
     setIsOpen((prev) => !prev);
   };
 
-  // Close the menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
