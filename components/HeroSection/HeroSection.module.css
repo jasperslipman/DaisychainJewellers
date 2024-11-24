@@ -1,0 +1,41 @@
+.heroSection {
+    width: 100%;
+    background-image: url("../../public/images/photos/daisychain-background.jpg"); 
+    height: 90svh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.heroContainer {
+    height: 100%;
+}
+
+.heroCard { 
+    align-self: center;
+    padding: var(--xl-gap);
+    background-color: var(--accent-color);
+    grid-column: 1 / 8;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--rounded-corners);
+    box-shadow: var(--card-shadow-large);
+    gap: var(--m-gap);
+}
+
+.heroTextContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
+}
+
+.heroHeader {
+    color: var(--font-color-black);
+}
+
+.heroParagraph {
+    color: var(--font-color-black);
+    font-size: var(--body-large-font-size);
+    font-weight: var(--font-weight-semi-bold);
+}
+

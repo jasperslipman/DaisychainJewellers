@@ -1,0 +1,29 @@
+.aboutUsSection {
+    background-color: var(--main-foreground-color);
+}
+
+.daisychainVectorFlower {
+    grid-column: 6 / 8;
+    width: 55%;
+    object-fit: cover;
+    overflow: hidden;
+    justify-self: center;
+}
+
+.aboutUsContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
+    grid-column: 3 / 11; 
+}
+
+.aboutUsHeading {
+    text-align: center;
+    color: var(--font-color-primary);
+}
+
+.aboutUsParagraph {
+    font-size: var(--body-font-size);
+    color: var(--font-color-white); 
+    text-align: center;
+}

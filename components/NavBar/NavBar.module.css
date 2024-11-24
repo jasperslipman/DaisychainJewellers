@@ -5,11 +5,14 @@
     background-color: var(--secondary-foreground-color);
     transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
     opacity: 1; /* Full opacity by default */
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
 }
 
 /* Scrolling State */
 .scrolling {
-    opacity: 0.8; /* Reduce opacity to 80% when scrolling */
+    opacity: 0.5; /* Reduce opacity to 80% when scrolling */
     
 }
 
