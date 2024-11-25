@@ -1,0 +1,91 @@
+/* Testimonials Section Styling */
+
+.testimonialsCardsSection {
+    background-color: var(--main-background-color);
+}
+
+.testmonialsCardsContainer {
+    row-gap: var(--xxl-gap);
+}
+
+.testimonialsCardsTextContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--s-gap);
+    grid-column: 3 / 11;
+    grid-row: 1; 
+}
+
+.testimonialsCardsHeading {
+    color: var(--font-color-black);
+}
+
+.testimonialsCardsParagraph {
+    color: var(--font-color-black);
+    text-align: center;
+}
+
+.testimonialsCardsHolder {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1 / 13;
+    grid-row: 2;
+    gap: var(--grid-gap);
+}
+
+.testimonialCard {
+    padding: var(--xl-gap);
+    box-shadow: var(--card-shadow-regular);
+    border-radius: var(--rounded-corners);
+    justify-content: center;
+    align-self: center;
+    flex: 1;
+}
+
+.testimonialCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--m-gap)
+}
+
+.testimonialText {
+    font-size: var(--body-font-size);
+    color: var(--font-color-black);
+    font-weight: var(--font-weight-regular);
+}
+
+.secondary {
+    height: 80%;
+}
+
+.daisyReviewChart {
+    display: flex;
+    flex-direction: row;
+    gap: var(--xs-gap);
+}
+
+.daisyReviewImage {
+    height: var(--h3-font-size);
+}
+
+.testimonialAuthor {
+    font-size: var(--body-font-size);
+    color: var(--font-color-black);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
