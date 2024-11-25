@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
 const TestimonialCardsSection: React.FC = () => {
 
     return (
-    <section className={`section-horizontal-padding sub-section-padding`}>
+    <section className={`${styles.testimonialsCardsSection} section-horizontal-padding sub-section-padding`}>
         <div className={` ${styles.testimonialsCardsContainer} container css-grid`}>
             <div className={` ${styles.testimonialsCardsTextContent}`}>
                         <h2 className={` ${styles.testimonialsCardsHeading}`}> Testimonials </h2>

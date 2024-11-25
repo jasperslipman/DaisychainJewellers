@@ -1,0 +1,23 @@
+.seasonalSection {
+    background-color: var(--main-background-color);
+}
+
+.seasonalContent {
+    grid-column: 3 / 11;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    gap: var(--m-gap);
+}
+
+.seasonalHeading {
+    color: var(--font-color-black);
+    text-align: center;
+}
+
+.seasonalParagraph {
+    color: var(--font-color-black);
+    text-align: center;
+}

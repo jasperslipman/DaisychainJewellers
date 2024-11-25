@@ -6,6 +6,8 @@ import HeroSection from '../components/HeroSection/HeroSection';
 import AboutUs from '../components/AboutUsSection/AboutUs';
 import TestimonialCardsSection from '../components/TestimonialCardsSection/TestimonialCardsSection';
 import ServicesSection from '../components/ServicesSection/ServicesSection';
+import SeasonalSection from '../components/SeasonalSection/SeasonalSection';
+import ContactUsSection from '../components/ContactUsSection/ContactUsSection';
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +17,8 @@ const Home: React.FC = () => {
       <AboutUs />
       <TestimonialCardsSection />
       <ServicesSection />
+      <SeasonalSection />
+      <ContactUsSection />
     </>
   );
 };
