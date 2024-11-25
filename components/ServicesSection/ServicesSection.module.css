@@ -1,0 +1,46 @@
+.servicesSection {
+    background-color: var(--main-background-color);
+
+}
+
+.serviceCard {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-foreground-color);
+    border-radius: var(--rounded-corners);
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+    grid-column: 1 / 13;
+}
+
+.serviceImage {
+    width: 50%;
+    height: auto; 
+    aspect-ratio: 3 / 2; 
+    display: block;
+}
+
+.serviceTextContent {
+    display: flex;
+    flex-direction: column;
+    padding: var(--xl-gap);
+    gap: var(--m-gap);
+    align-items: start;
+    width: 50%;
+    align-self: center;
+}
+
+.serviceHeading {
+    color: var(--font-color-primary);
+}
+
+.serviceParagraph {
+    color: var(--font-color-primary);
+    font-size: var(--body-font-size);
+}
+
+
+.reversed {
+    flex-direction: row-reverse;
+  }
+
