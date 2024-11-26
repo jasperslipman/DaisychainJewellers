@@ -1,0 +1,133 @@
+.footerSection {
+    padding-top: var(--m-padding);
+    padding-bottom: var(--m-padding);
+    background-color: var(--main-foreground-color);
+  }
+
+  .logoDiv {
+    padding: var(--l-padding);
+    
+  }
+
+  .footerDiv {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
+
+  }
+
+  .daisychainFooterLogo {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .daisychainDescriptionParagraph {
+    font-size: var(--body-small-font-size);
+    color: var(--primary-font-color);
+    text-align: center;
+    padding: var(--xs-padding);
+  }
+
+  .footerMainHeading {
+    font-size: var(--body-large-font-size);
+    text-align: center;
+  }
+
+  .footerSubDiv {
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs-gap);
+  }
+
+  .footerSubHeading {
+    font-size: var(--body-font-size);
+  }
+
+  .footerBodyText {
+    font-size: var(--body-font-size);
+    color: var(--primary-font-color);
+  }
+  
+  /* Opening Hours Table */
+  .openingHoursTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .openingHoursTable th,
+  .openingHoursTable td {
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+  
+  .openingHoursTable th {
+    font-weight: bold;
+    width: 50%;
+  }
+  
+  .openingHours {
+    margin-bottom: var(--s-gap);
+  }
+  
+  /* Shop Address */
+  .address {
+    font-style: normal;
+  }
+  
+  /* Contact Details */
+  .contactDetail {
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs-gap);
+  }
+  
+  /* Links */
+  .contactLink,
+  .pageLink,
+  .socialLink {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contactLink:hover,
+  .pageLink:hover,
+  .socialLink:hover {
+    color: var(--primary-hover-color);
+  }
+  
+  /* Social Media Links */
+  .socialLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Lists */
+  .socialMediaList,
+  .pagesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .socialMediaList li,
+  .pagesList li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .socialMediaList li:last-child,
+  .pagesList li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Pages Section */
+  .pagesSection {
+    display: flex;
+    flex-direction: column;
+    gap: var(--xs-gap);
+  }
+

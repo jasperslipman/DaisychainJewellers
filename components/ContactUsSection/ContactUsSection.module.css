@@ -5,18 +5,78 @@
   }
   
   .titleBox {
-    grid-column: 4 / 10;
+    grid-column: 3 / 11;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
+  }
+
+  .contactUsTitle {
+    color: var(--font-color-black);
   }
   
   .visitUsBox {
     grid-column: 1 / 7;
     grid-row: 2;
+    display: flex;
+    gap: var(--m-gap);
+    flex-direction: column;
+  }
+
+  .visitShopTitle {
+    color: var(--font-color-black);
+    text-align: center;
+  }
+
+  .openingHoursContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
+  }
+
+  .openingHoursTitle {
+    color: var(--font-color-black);
+  }
+
+  .openingHoursTable {
+    display: flex;
+    flex-direction: row;
+    gap: var(--xl-gap);
+  }
+
+  .openingDays {
+    align-items: start;
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .shopAddressContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
+  }
+
+  .shopAddressTitle {
+    color: var(--font-color-black);
   }
   
   .getInTouchBox {
     grid-column: 7 / 13;
     grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: var(--m-gap);
+  }
+
+  .getInTouchTitle {
+    color: var(--font-color-black);
+  }
+
+  .contactDetail {
+    display: flex;
+    gap: var(--s-gap);
+    flex-direction: column;
   }
   
   .mapImageContainer {
@@ -44,5 +104,6 @@
   .contactDetail svg {
     margin-right: 8px;
     color: var(--primary-color);
+    height: var(--body-font-size);
   }
   

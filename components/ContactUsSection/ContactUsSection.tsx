@@ -65,27 +65,25 @@ const ContactUsSection: React.FC = () => {
 
         {/* Contact Us Title Box */}
         <div
-          id="contact-us-title-box"
-          className={`${styles.titleBox} flex-gap-s text-center`}
+          className={`${styles.titleBox}`}
         >
-          <h2 className="font-color-black">Contact Us</h2>
+          <h2 className={`${styles.contactUsTitle}`}>Contact Us</h2>
           <p>
-            Welcome to Daisychain Jewellers! We are dedicated to providing you with the finest custom-made engagement rings, wedding bands, and exceptional jewelry services. Reach out to us for any inquiries or visit our store to explore our exquisite collections.
+            Here is our contact information, opening hours and shop address. We look forward to hearing from you!
           </p>
         </div>
 
         {/* Visit Us Box */}
         <div
-          id="visit-us-box"
-          className={`${styles.visitUsBox} flex-gap-m`}
+          className={`${styles.visitUsBox}`}
         >
-          <h3 className="font-color-black text-center">Visit The Shop</h3>
+          <h3 className={`${styles.visitShopTitle}`}>Visit The Shop</h3>
 
           {/* Opening Hours */}
-          <div className={`${styles.openingHours} flex-gap-s flex-column`}>
-            <h4 className="font-color-black">Opening Hours</h4>
-            <div className="opening-hours-table">
-              <div className="opening-days flex-column">
+          <div className={`${styles.openingHoursContainer}`}>
+            <h4 className={`${styles.openingHoursTitle}`}>Opening Hours</h4>
+            <div className={`${styles.openingHoursTable}`}>
+              <div className={`${styles.openingDays}`}>
                 <span>Monday</span>
                 <span>Tuesday</span>
                 <span>Wednesday</span>
@@ -94,7 +92,7 @@ const ContactUsSection: React.FC = () => {
                 <span>Saturday</span>
                 <span>Sunday</span>
               </div>
-              <div className="opening-hours flex-column">
+              <div className={`${styles.openingDays}`}>
                 <span>Closed</span>
                 <span>9am-5pm</span>
                 <span>9am-5pm</span>
@@ -107,8 +105,8 @@ const ContactUsSection: React.FC = () => {
           </div>
 
           {/* Shop Address */}
-          <div className={`${styles.shopAddress} flex-gap-xs flex-column`}>
-            <h4 className="font-color-black">Shop Address</h4>
+          <div className={`${styles.shopAddressContainer}`}>
+            <h4 className={`${styles.shopAddressTitle}`}>Shop Address</h4>
             <address>
               <span>Daisychain Jewellers</span>
               <span>47 St Johns Road</span>
@@ -121,12 +119,12 @@ const ContactUsSection: React.FC = () => {
         {/* Get In Touch Box */}
         <div
           id="contact-us-box"
-          className={`${styles.getInTouchBox} flex-gap-m`}
+          className={`${styles.getInTouchBox}`}
         >
-          <h3 className="font-color-black text-center">Get In Touch</h3>
+          <h3 className={`${styles.getInTouchTitle}`}>Get In Touch</h3>
 
           {/* Telephone */}
-          <div className={`${styles.contactDetail} flex-gap-s flex-column`}>
+          <div className={`${styles.contactDetail}`}>
             <h4 className="font-color-black">Telephone</h4>
             <span>
               <FaPhoneAlt aria-hidden="true" />

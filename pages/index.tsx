@@ -8,6 +8,7 @@ import TestimonialCardsSection from '../components/TestimonialCardsSection/Testi
 import ServicesSection from '../components/ServicesSection/ServicesSection';
 import SeasonalSection from '../components/SeasonalSection/SeasonalSection';
 import ContactUsSection from '../components/ContactUsSection/ContactUsSection';
+import FooterSection from '../components/Footer/Footer';
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
       <ServicesSection />
       <SeasonalSection />
       <ContactUsSection />
+      <FooterSection />
     </>
   );
 };
