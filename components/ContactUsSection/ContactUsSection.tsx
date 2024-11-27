@@ -48,9 +48,13 @@ const ContactUsSection: React.FC = () => {
     ]
   };
 
+  interface ContactUsSectionProps {
+    id?: string; 
+  }
+
   return (
     <section
-      id="contact-us-section"
+      id="contact-us"
       className={`${styles.contactUsSection} section-horizontal-padding sub-section-padding main-background-color`}
     >
       {/* Inject JSON-LD Structured Data */}

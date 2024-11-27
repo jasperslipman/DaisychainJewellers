@@ -1,23 +1,23 @@
-/* Navbar Container */
+/* NavBar.module.css */
 .navbarHeader {
     padding-top: var(--m-padding);
     padding-bottom: var(--m-padding);
     background-color: var(--secondary-foreground-color);
     transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
-    opacity: 1; /* Full opacity by default */
+    opacity: 1; 
     position: sticky;
-    top: 0; /* Sticks to the top of the viewport */
-    z-index: 1000; /* Ensure it's above other content */
+    top: 0; 
+    z-index: 1000; 
     box-shadow: var(--shadow-medium); 
 }
 
-/* Scrolling State */
+
 .scrolling {
-    opacity: 0.5; /* Reduce opacity to 80% when scrolling */
+    opacity: 0.5; 
     
 }
 
-/* Logo Link */
+
 .homepageLogoLink {
     grid-column: 1 / 3;
     grid-row: 1;
@@ -28,7 +28,11 @@
     padding: var(--s-padding);
 }
 
-/* Desktop Nav Menu */
+.homepageLogoLink :hover {
+    opacity: var(--hover-opacity);
+}
+
+
 .desktopNavMenu {
     grid-column: 3 / 13;
     grid-row: 1;
@@ -37,7 +41,7 @@
     display: flex;
 }
 
-/* Primary Nav Links */
+
 .primaryNavLinks {
     display: flex;
     flex-direction: row;
@@ -45,7 +49,7 @@
     gap: var(--xs-gap);
 }
 
-/* Navigation Links */
+
 .navLink {
     font-size: var(--body-large-font-size);
     color: var(--font-color-primary);
@@ -55,11 +59,15 @@
     align-items: center;
 }
 
+.navLink:hover {
+    opacity: var(--hover-opacity);
+}
+
 .linkWrapper {
     padding: var(--s-padding);
 }
 
-/* Dropdown */
+
 .navDropdown {
     position: relative;
 }
@@ -72,7 +80,7 @@
 }
 
 
-/* Dropdown Menu */
+
 .dropdownMenu {
     position: absolute;
     top: 100%;
@@ -86,7 +94,6 @@
     
 }
 
-/* Dropdown Menu Items */
 .dropdownMenuItem {
     padding: var(--s-padding);
     
@@ -101,11 +108,9 @@
 }
 
 .dropdownMenuLink:hover {
-    background-color: var(--primary-color);
-    color: var(--font-color-secondary);
+    opacity: 0.8;
 }
 
-/* Hamburger Styles */
 .hamburgerButton {
     grid-column: 12 / 13;
     align-self: center;
@@ -183,7 +188,7 @@
     animation: slideUp 0.5s forwards;
   }
 
-  /* Mobile Menu */ 
+  
   .mobileMenu {
     position: fixed;
     top: 0;
@@ -229,16 +234,14 @@
     
 }
 
-/* Mobile Navigation Link */
 .mobileNavLink {
-    color: var(--accent-color); /* Text color */
-    font-size: var(--h3-font-size); /* Text size */
-    font-family: 'heading-font'; /* Text font */
+    color: var(--accent-color); 
+    font-size: var(--h3-font-size); 
+    font-family: 'heading-font'; 
     font-weight: var(--font-weight-regular);
     
 }
 
-/* Contact Button Styling */
 .contactButton {
 
 }
@@ -247,19 +250,16 @@
    
 }
 
-/* Mobile Sub-navigation List */
 .mobileSubNavList {
     display: flex;
     flex-direction: column;
     gap: var(--xs-gap);
 }
 
-/* Mobile Sub-navigation Item */
 .mobileSubNavItem {
 
 }
 
-/* Mobile Sub-navigation Link */
 .mobileSubNavLink {
     font-size: var(--body-font-size);
     color: var(--font-color-primary);

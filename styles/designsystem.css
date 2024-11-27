@@ -62,9 +62,17 @@
     font-weight: var(--font-weight-light);
 }
 
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
 /* Global Custom Propeties */
 
 :root {
+
+    /* Default NavBar height */
+    --navbar-height: 80px; 
+
     /* Colour Pallete */
     --off-black-color: #1A1A1A; 
     --off-white-color: #FEFFF9; 
@@ -140,6 +148,9 @@
 
     /* Rounded Corners */ 
     --rounded-corners: 0.25rem;
+
+    /* Hover Opacity */ 
+    --hover-opacity: 0.8;
 
     
 
@@ -414,6 +425,10 @@ p, a, span, li, label, input, textarea, select {
 .button.tertiary {
     background-color: var(--button-tertiary-background-color);
     color: var(--font-color-primary);
+}
+
+.button:hover {
+    opacity: 0.8;
 }
 
 /* Shadows */

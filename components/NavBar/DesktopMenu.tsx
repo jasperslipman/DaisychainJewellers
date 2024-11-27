@@ -1,4 +1,7 @@
+// DesktopMenu.tsx
+
 import React from 'react';
+import Link from 'next/link'; // Import Link
 import DropdownMenu from './DropdownMenu';
 import styles from './NavBar.module.css';
 
@@ -7,21 +10,21 @@ const DesktopNavMenu: React.FC = () => {
         <div className={styles.desktopNavMenu}>
             <ul className={styles.primaryNavLinks}>
                 <li>
-                    <a
-                        className={`${styles.navLink} ${styles.linkWrapper}`}
+                    <Link
                         href="/"
+                        className={`${styles.navLink} ${styles.linkWrapper}`}
                         aria-current="page"
                     >
                         Home
-                    </a>
+                    </Link>
                 </li>
 
                 <DropdownMenu
                     id="engagement-wedding-menu"
                     title="Engagement & Wedding"
                     items={[
-                        { label: 'Engagement', link: '/engagement' },
-                        { label: 'Wedding', link: '/wedding' },
+                        { label: 'Engagement', link: '/engagement-wedding#engagement' }, // Anchor Link
+                        { label: 'Wedding', link: '/engagement-wedding#wedding' }, // Anchor Link
                     ]}
                 />
 
@@ -29,27 +32,27 @@ const DesktopNavMenu: React.FC = () => {
                     id="our-services-menu"
                     title="Our Services"
                     items={[
-                        { label: 'Service 1', link: '/service1' },
-                        { label: 'Service 2', link: '/service2' },
+                        { label: 'Service 1', link: '/coming-soon#service1' }, // Redirect to Coming Soon
+                        { label: 'Service 2', link: '/coming-soon#service2' }, // Redirect to Coming Soon
                     ]}
                 />
 
                 <li>
-                    <a
-                        className={`${styles.navLink} ${styles.linkWrapper}`}
+                    <Link
                         href="/ethics-values"
+                        className={`${styles.navLink} ${styles.linkWrapper}`}
                     >
                         Ethics & Values
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a
-                        id="contact-us-cta-button"
+                    <Link
+                        href="#contact-us" // Anchor to Contact Section
                         className={`button ${styles.linkWrapper}`}
-                        href="/contact"
+                        aria-label="Contact Us"
                     >
                         Contact Us
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>
