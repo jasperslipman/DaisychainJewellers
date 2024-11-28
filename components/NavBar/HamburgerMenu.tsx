@@ -1,14 +1,14 @@
-/* HamburgerMenu.tsx */
+// components/NavBar/HamburgerMenu.tsx
 
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './NavBar.module.css'; 
 
 interface HamburgerMenuProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     isOpen: boolean;
     toggleMenu: () => void;
-  }
-  
-  const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu, className, ...rest }) => {
+}
+
+const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isOpen, toggleMenu, className, ...rest }) => {
     return (
         <button
             className={`${styles.hamburger} ${isOpen ? styles.open : ''} ${className}`}
@@ -24,5 +24,5 @@ interface HamburgerMenuProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
         </button>
     );
 };
-  
-  export default HamburgerMenu;
+
+export default HamburgerMenu;

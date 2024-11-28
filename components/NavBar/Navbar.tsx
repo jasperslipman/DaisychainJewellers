@@ -6,6 +6,7 @@ import styles from './NavBar.module.css';
 import HamburgerMenu from './HamburgerMenu';
 import DesktopNavMenu from './DesktopMenu';
 import MobileMenu from './MobileMenu';
+import DaisychainLogo from '../../public/images/logos/daisychain-logo-letter-group.svg';
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -96,16 +97,9 @@ const Navbar: React.FC = () => {
                         className={styles.homepageLogoLink}
                         aria-label="Homepage"
                     >
-                        <img
-                            src="/images/logos/daisychain-logo-letter-group.svg"
-                            alt="Daisychain Jewellers Logo"
-                            id="daisychain-letter-logo"
-                            width={10}
-                            height={10}
-                        />
-                        {/* If you prefer using the SVG component with aria-label:
-                        <DaisychainLogo id="daisychain-letter-logo" aria-label="Daisychain Jewellers Logo" />
-                        */}
+                       
+                        <DaisychainLogo className={`${styles.daisychainLogo}`} aria-label="Daisychain Jewellers Logo" />
+                    
                     </Link>
 
                     {/* Desktop Navigation Menu */}
