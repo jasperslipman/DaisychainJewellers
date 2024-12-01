@@ -1,7 +1,7 @@
 .heroSection {
     width: 100%;
     background-image: url("../../public/images/photos/daisychain-background.jpg"); 
-    height: 90svh;
+    height: calc(90svh - var(--navbar-height));
     background-size: cover;
     background-position: center;
     
@@ -39,3 +39,6 @@
     font-weight: var(--font-weight-semi-bold);
 }
 
+.heroSubHeader {
+    color: var(--font-color-black);
+}

@@ -431,6 +431,10 @@ p, a, span, li, label, input, textarea, select {
     opacity: 0.8;
 }
 
+.button:focus {
+    outline: 2px solid var(--off-black-color)
+}
+
 /* Shadows */
 .shadow-regular {
     box-shadow: var(--shadow-regular);
