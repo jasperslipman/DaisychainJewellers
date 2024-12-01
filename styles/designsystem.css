@@ -625,6 +625,12 @@ p, a, span, li, label, input, textarea, select {
     flex-direction: row-reverse;
 }
 
+.container {
+    max-width: 1440px; 
+    justify-self: center;
+    width: 100%;
+}
+
 
 
 

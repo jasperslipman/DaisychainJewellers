@@ -1,6 +1,6 @@
 // components/NavBar/MobileMenu.tsx
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import NavLink from './NavLink'; 
 import styles from './NavBar.module.css';
 
@@ -10,7 +10,6 @@ interface MobileMenuProps {
 }
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
-    const [openSubMenus, setOpenSubMenus] = useState<{ [key: string]: boolean }>({});
 
     useEffect(() => {
         if (isOpen) {
@@ -23,13 +22,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
             document.body.style.overflow = '';
         };
     }, [isOpen]);
-
-    const handleSubMenuToggle = (id: string) => {
-        setOpenSubMenus(prev => ({
-            ...prev,
-            [id]: !prev[id],
-        }));
-    };
 
     return (
         <div
@@ -52,88 +44,75 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
                             Home
                         </NavLink>
                     </li>
+                    
+                    {/* Engagement & Wedding */}
                     <li className={styles.mobileNavItem}>
-                        <button
-                            className={styles.mobileNavLinkButton}
-                            onClick={() => handleSubMenuToggle('engagement-wedding')}
-                            aria-haspopup="true"
-                            aria-expanded={openSubMenus['engagement-wedding'] || false}
-                            aria-controls="engagement-wedding-submenu"
+                        <NavLink
+                            href="/engagement-wedding"
+                            className={styles.mobileNavLink}
+                            activeClassName={styles.activeLink}
+                            onClick={toggleMenu}
                         >
                             Engagement &amp; Wedding
-                        </button>
-                        {openSubMenus['engagement-wedding'] && (
-                            <ul
-                                className={styles.mobileSubNavList}
-                                id="engagement-wedding-submenu"
-                                role="menu"
-                            >
-                                <li className={styles.mobileSubNavItem} role="none">
-                                    <NavLink
-                                        href="/coming-soon#engagement"
-                                        className={styles.mobileSubNavLink}
-                                        activeClassName={styles.activeLink}
-                                        onClick={toggleMenu}
-                                        role="menuitem"
-                                    >
-                                        Engagement
-                                    </NavLink>
-                                </li>
-                                <li className={styles.mobileSubNavItem} role="none">
-                                    <NavLink
-                                        href="/coming-soon#wedding"
-                                        className={styles.mobileSubNavLink}
-                                        activeClassName={styles.activeLink}
-                                        onClick={toggleMenu}
-                                        role="menuitem"
-                                    >
-                                        Wedding
-                                    </NavLink>
-                                </li>
-                            </ul>
-                        )}
+                        </NavLink>
+                        <ul className={styles.mobileSubNavList}>
+                            <li className={styles.mobileSubNavItem}>
+                                <NavLink
+                                    href="/coming-soon#engagement"
+                                    className={styles.mobileSubNavLink}
+                                    activeClassName={styles.activeLink}
+                                    onClick={toggleMenu}
+                                >
+                                    Engagement
+                                </NavLink>
+                            </li>
+                            <li className={styles.mobileSubNavItem}>
+                                <NavLink
+                                    href="/coming-soon#wedding"
+                                    className={styles.mobileSubNavLink}
+                                    activeClassName={styles.activeLink}
+                                    onClick={toggleMenu}
+                                >
+                                    Wedding
+                                </NavLink>
+                            </li>
+                        </ul>
                     </li>
+                    
+                    {/* Our Services */}
                     <li className={styles.mobileNavItem}>
-                        <button
-                            className={styles.mobileNavLinkButton}
-                            onClick={() => handleSubMenuToggle('our-services')}
-                            aria-haspopup="true"
-                            aria-expanded={openSubMenus['our-services'] || false}
-                            aria-controls="our-services-submenu"
+                        <NavLink
+                            href="/our-services"
+                            className={styles.mobileNavLink}
+                            activeClassName={styles.activeLink}
+                            onClick={toggleMenu}
                         >
                             Our Services
-                        </button>
-                        {openSubMenus['our-services'] && (
-                            <ul
-                                className={styles.mobileSubNavList}
-                                id="our-services-submenu"
-                                role="menu"
-                            >
-                                <li className={styles.mobileSubNavItem} role="none">
-                                    <NavLink
-                                        href="/coming-soon#service1"
-                                        className={styles.mobileSubNavLink}
-                                        activeClassName={styles.activeLink}
-                                        onClick={toggleMenu}
-                                        role="menuitem"
-                                    >
-                                        Service 1
-                                    </NavLink>
-                                </li>
-                                <li className={styles.mobileSubNavItem} role="none">
-                                    <NavLink
-                                        href="/coming-soon#service2"
-                                        className={styles.mobileSubNavLink}
-                                        activeClassName={styles.activeLink}
-                                        onClick={toggleMenu}
-                                        role="menuitem"
-                                    >
-                                        Service 2
-                                    </NavLink>
-                                </li>
-                            </ul>
-                        )}
+                        </NavLink>
+                        <ul className={styles.mobileSubNavList}>
+                            <li className={styles.mobileSubNavItem}>
+                                <NavLink
+                                    href="/coming-soon#service1"
+                                    className={styles.mobileSubNavLink}
+                                    activeClassName={styles.activeLink}
+                                    onClick={toggleMenu}
+                                >
+                                    Service 1
+                                </NavLink>
+                            </li>
+                            <li className={styles.mobileSubNavItem}>
+                                <NavLink
+                                    href="/coming-soon#service2"
+                                    className={styles.mobileSubNavLink}
+                                    activeClassName={styles.activeLink}
+                                    onClick={toggleMenu}
+                                >
+                                    Service 2
+                                </NavLink>
+                            </li>
+                        </ul>
                     </li>
+                    
                     <li className={styles.mobileNavItem}>
                         <NavLink
                             href="/ethics-values"
@@ -144,6 +123,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
                             Ethics &amp; Values
                         </NavLink>
                     </li>
+                    
                     <li className={styles.mobileNavItem}>
                         <NavLink
                             href="#contact-us" // Anchored to Contact Section

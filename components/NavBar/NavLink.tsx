@@ -10,7 +10,7 @@ interface NavLinkProps {
     children: React.ReactNode;
     className?: string;
     activeClassName?: string;
-    [key: string]: any; // To pass any additional props
+    [key: string]: any; 
 }
 
 const NavLink: React.FC<NavLinkProps> = ({
