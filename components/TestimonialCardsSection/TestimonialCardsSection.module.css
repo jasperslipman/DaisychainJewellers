@@ -1,4 +1,26 @@
 /* Testimonials Section Styling */
+.liCard {
+    flex: 1; 
+    align-self: center;
+}
+
+.visuallyHidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip: rect(0, 0, 0, 0); 
+    white-space: nowrap; 
+    border: 0; 
+}
+
+.testimonialCard:hover,
+.testimonialCard:focus-within {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-large);
+}
 
 .testimonialsCardsSection {
     background-color: var(--main-background-color);
@@ -13,7 +35,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: var(--s-gap);
+    gap: var(--heading-gap);
     grid-column: 3 / 11;
     grid-row: 1; 
 }
@@ -43,7 +65,10 @@
     align-self: center;
     flex: 1;
     background-color: var(--main-background-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
+
 
 .testimonialCardContent {
     display: flex;
@@ -57,6 +82,7 @@
     font-size: var(--body-font-size);
     color: var(--font-color-black);
     font-weight: var(--font-weight-regular);
+    font-style: italic;
 }
 
 .secondary {
@@ -78,18 +104,3 @@
     color: var(--font-color-black);
     font-weight: var(--font-weight-semi-bold);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

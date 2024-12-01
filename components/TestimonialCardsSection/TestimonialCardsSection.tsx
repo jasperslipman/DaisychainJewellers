@@ -1,4 +1,7 @@
+// components/TestimonialCardsSection.tsx
+
 import React from 'react';
+import Head from 'next/head';
 import styles from './TestimonialCardsSection.module.css';
 import TestimonialCard from './TestimonialCard';
 
@@ -27,32 +30,71 @@ const testimonials: Testimonial[] = [
 ];
 
 const TestimonialCardsSection: React.FC = () => {
+    // Prepare structured data for SEO
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": testimonials.map((testimonial, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": testimonial.author
+                },
+                "reviewBody": testimonial.text,
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": testimonial.reviews,
+                    "bestRating": "5"
+                }
+            }
+        }))
+    };
 
     return (
-    <section className={`${styles.testimonialsCardsSection} section-horizontal-padding sub-section-padding`}>
-        <div className={` ${styles.testimonialsCardsContainer} container css-grid`}>
-            <div className={` ${styles.testimonialsCardsTextContent}`}>
-                        <h2 className={` ${styles.testimonialsCardsHeading}`}> Testimonials </h2>
-                        <p className={` ${styles.testimonialsCardsParagraph}`}>Read what our customers have to say about their experiences with Daisychain Jewellers. We're proud to share testimonials highlighting our 
-                            craftsmanship, personalized service, and dedication to meeting all your bespoke jewellery needs.</p> 
-            </div>
-            
-            <div className={` ${styles.testimonialsCardsHolder}`}>
-                {testimonials.map((testimonial, index) => (
-                        <TestimonialCard
-                            key={index}
-                            text={testimonial.text}
-                            author={testimonial.author}
-                            reviews={testimonial.reviews}
-                            variant={index === 1 ? 'main' : 'secondary'} // Middle card is 'main'
-                        />
-                    ))}
-            </div>
-
-             
-       
-        </div>
-    </section>
+        <>
+            <Head>
+                <title>Customer Testimonials - Daisychain Jewellers</title>
+                <meta name="description" content="Read testimonials from our satisfied customers about their experiences with Daisychain Jewellers, specializing in bespoke engagement and wedding rings." />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(structuredData),
+                    }}
+                />
+            </Head>
+            <section
+                className={`${styles.testimonialsCardsSection} section-horizontal-padding sub-section-padding`}
+                aria-labelledby="testimonials-heading"
+            >
+                <div className={`container css-grid`}>
+                    <div className={styles.testimonialsCardsTextContent}>
+                        <h2 id="testimonials-heading" className={styles.testimonialsCardsHeading}>
+                            Testimonials
+                        </h2>
+                        <p className={styles.testimonialsCardsParagraph}>
+                            Read what our customers have to say about their experiences with Daisychain Jewellers. We're proud to share testimonials highlighting our craftsmanship, personalized service, and dedication to meeting all your bespoke jewellery needs.
+                        </p>
+                    </div>
+                    
+                    {/* Wrap testimonials in a list */}
+                    <ul className={styles.testimonialsCardsHolder}>
+                        {testimonials.map((testimonial, index) => (
+                            <li className={styles.liCard} key={index}>
+                                <TestimonialCard
+                                    text={testimonial.text}
+                                    author={testimonial.author}
+                                    reviews={testimonial.reviews}
+                                    variant={index === 1 ? 'main' : 'secondary'} // Middle card is 'main'
+                                />
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+        </>
     );
 };
 

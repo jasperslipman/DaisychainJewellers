@@ -14,7 +14,7 @@
 .aboutUsContent {
     display: flex;
     flex-direction: column;
-    gap: var(--s-gap);
+    gap: var(--heading-gap);
     grid-column: 3 / 11; 
 }
 

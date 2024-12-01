@@ -105,6 +105,9 @@ html {
     --xxxxxl-gap: 4rem;
 
     /* Typography */
+
+    --heading-gap: 0.5rem; 
+    
     --heading-line-height: 1.2;
     --body-line-height: 1.6;
 
