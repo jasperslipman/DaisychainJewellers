@@ -4,10 +4,11 @@
 
 .daisychainVectorFlower {
     grid-column: 6 / 8;
-    width: 55%;
     object-fit: cover;
     overflow: hidden;
     justify-self: center;
+    grid-row: 1; 
+    width: 75%;
 }
 
 .aboutUsContent {
