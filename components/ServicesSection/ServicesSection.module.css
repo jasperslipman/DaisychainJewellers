@@ -1,6 +1,7 @@
+/* ServicesSection.module.css */
+
 .servicesSection {
     background-color: var(--main-background-color);
-
 }
 
 .serviceCard {
@@ -14,10 +15,8 @@
 }
 
 .serviceImage {
-    width: 50%;
-    height: auto; 
-    aspect-ratio: 3 / 2; 
-    display: block;
+    object-fit: cover; /* Ensures the image covers its container without distortion */
+    border-radius: var(--rounded-corners); /* Matches your design */
 }
 
 .serviceTextContent {
@@ -39,8 +38,22 @@
     font-size: var(--body-font-size);
 }
 
-
 .reversed {
     flex-direction: row-reverse;
-  }
+}
 
+.imageWrapper {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+}
+
+
+
+/* Fallback for browsers that don't support aspect-ratio */
+@supports not (aspect-ratio: 3 / 2) {
+    .imageWrapper {
+        padding-top: 66.666%; /* 3:2 aspect ratio */
+    }
+}
