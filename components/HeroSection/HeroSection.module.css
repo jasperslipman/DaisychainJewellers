@@ -1,7 +1,7 @@
 .heroSection {
     width: 100%;
     background-image: url("../../public/images/photos/daisychain-background.jpg"); 
-    height: calc(90svh - var(--navbar-height));
+    height: calc(95svh - var(--navbar-height));
     background-size: cover;
     background-position: center;
     
