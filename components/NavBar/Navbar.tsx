@@ -18,20 +18,17 @@ const Navbar: React.FC = () => {
         setIsMenuOpen((prev) => !prev);
     };
 
-    // Handle scrolling state
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolling(true);
 
-            // Clear the previous timeout
             if (scrollTimeout.current) {
                 clearTimeout(scrollTimeout.current);
             }
 
-            // Set a new timeout to remove the scrolling state after scrolling stops
             scrollTimeout.current = setTimeout(() => {
                 setIsScrolling(false);
-            }, 200); // Adjust the timeout duration as needed (200ms)
+            }, 200); 
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -44,7 +41,6 @@ const Navbar: React.FC = () => {
         };
     }, []);
 
-    // Dynamically set CSS variable for NavBar height
     useEffect(() => {
         const setNavBarHeight = () => {
             if (navbarRef.current) {
@@ -55,14 +51,12 @@ const Navbar: React.FC = () => {
 
         setNavBarHeight();
 
-        // Update NavBar height on window resize
         const handleResize = () => {
             setNavBarHeight();
         };
 
         window.addEventListener('resize', handleResize);
 
-        // Optional: Use ResizeObserver for more precise measurement
         let resizeObserver: ResizeObserver | null = null;
         if (navbarRef.current) {
             resizeObserver = new ResizeObserver(() => {
@@ -91,7 +85,6 @@ const Navbar: React.FC = () => {
                     className="css-grid"
                     aria-label="Main navigation"
                 >
-                    {/* Logo with Descriptive alt Attribute */}
                     <Link
                         href="/"
                         className={styles.homepageLogoLink}

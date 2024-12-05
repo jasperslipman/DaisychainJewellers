@@ -1,7 +1,7 @@
 // components/NavBar/DropdownMenu.tsx
 
 import React, { useState, useRef, useEffect } from 'react';
-import NavLink from './NavLink'; // Use the custom NavLink
+import NavLink from './NavLink'; 
 import styles from './NavBar.module.css';
 import DropdownIcon from '../../public/images/icons/daisychain-drop-down-icon.svg';
 import { useRouter } from 'next/router';
@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 interface DropdownMenuProps {
   id: string;
   title: string;
-  link: string; // Added link property
+  link: string; 
   items: { label: string; link: string }[];
 }
 
@@ -18,7 +18,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ id, title, link, items }) =
   const dropdownRef = useRef<HTMLLIElement>(null);
   const router = useRouter();
 
-  // Check if parent link or any child link is active
+  
   const isActive =
     router.asPath === link ||
     items.some(
@@ -39,7 +39,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ id, title, link, items }) =
     const handleEsc = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setIsOpen(false);
-        dropdownRef.current?.querySelector('a')?.focus(); // Return focus to link
+        dropdownRef.current?.querySelector('a')?.focus(); 
       }
     };
 
@@ -93,7 +93,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ id, title, link, items }) =
                 className={styles.dropdownMenuLink}
                 role="menuitem"
                 activeClassName={styles.activeLink}
-                onClick={() => setIsOpen(false)} // Close menu on click
+                onClick={() => setIsOpen(false)} 
               >
                 {item.label}
               </NavLink>

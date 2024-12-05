@@ -1,7 +1,7 @@
 // components/NavBar/DesktopMenu.tsx
 
 import React from 'react';
-import NavLink from './NavLink'; // Import the custom NavLink
+import NavLink from './NavLink'; 
 import DropdownMenu from './DropdownMenu';
 import styles from './NavBar.module.css';
 
@@ -13,7 +13,7 @@ const DesktopNavMenu: React.FC = () => {
           <NavLink
             href="/"
             className={`${styles.navLink} ${styles.linkWrapper}`}
-            activeClassName={styles.activeLink} // Apply active styles
+            activeClassName={styles.activeLink} 
             aria-current="page"
           >
             Home
@@ -23,7 +23,7 @@ const DesktopNavMenu: React.FC = () => {
         <DropdownMenu
           id="engagement-wedding-menu"
           title="Engagement & Wedding"
-          link="/#engagement-wedding-home" // Added link property
+          link="/#engagement-wedding-home" 
           items={[
             { label: 'Coming Soon', link: '/#engagement-wedding-home' },
           ]}
@@ -32,7 +32,7 @@ const DesktopNavMenu: React.FC = () => {
         <DropdownMenu
           id="our-services-menu"
           title="Our Services"
-          link="/#our-services-home" // Added link property
+          link="/#our-services-home" 
           items={[
             { label: 'Coming Soon', link: '/#our-services-home' },
           ]}
@@ -49,7 +49,7 @@ const DesktopNavMenu: React.FC = () => {
         </li>
         <li>
           <NavLink
-            href="#contact-us" // Anchor to Contact Section
+            href="#contact-us" 
             className={`button ${styles.linkWrapper}`}
             activeClassName={styles.activeLink}
             aria-label="Contact Us"

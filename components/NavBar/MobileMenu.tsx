@@ -106,7 +106,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
                     
                     <li className={styles.mobileNavItem}>
                         <NavLink
-                            href="#contact-us" // Anchored to Contact Section
+                            href="#contact-us" 
                             className={`${styles.mobileNavLink} ${styles.contactButton}`}
                             activeClassName={styles.activeLink}
                             aria-label="Contact Us"

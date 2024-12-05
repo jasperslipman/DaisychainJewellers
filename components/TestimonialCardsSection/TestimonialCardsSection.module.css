@@ -51,8 +51,7 @@
 
 .testimonialsCardsHolder {
     display: flex;
-    flex-direction: row;
-    grid-column: 1 / 13;
+    flex-direction: column;
     grid-row: 2;
     gap: var(--grid-gap);
 }
@@ -103,4 +102,51 @@
     font-size: var(--body-font-size);
     color: var(--font-color-black);
     font-weight: var(--font-weight-semi-bold);
+}
+
+/* Breakpoints */ 
+
+/* Media Query for Small Phones */
+@media (max-width: 479px) {
+    
+}
+
+/* Media Query for Large Phones */
+@media (min-width: 480px) {
+    .testimonialsCardsHolder {
+        grid-column: 1 / 4;
+        
+    }
+    
+    
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) {
+    .testimonialsCardsHolder {
+        grid-column: 1 / 8;
+        
+    }
+    
+
+    
+}
+
+/* Media Query for Large Desktops */
+@media (min-width: 1280px) {
+    .testimonialsCardsHolder {
+        flex-direction: row;
+        grid-column: 1 / 13;
+        
+    }
+}
+
+/* Media Query for Extra Large Desktops */
+@media (min-width: 1440px) {
+    
+}
+
+/* Media Query for Ultra-Wide Screens */
+@media (min-width: 1920px) {
+    
 }
