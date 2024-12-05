@@ -1,11 +1,16 @@
+// Footer.tsx
 import React from 'react';
 import Script from 'next/script';
 import styles from './Footer.module.css';
-import { FaInstagram, FaFacebookF } from 'react-icons/fa';
-import DaisychainVector from '../../public/images/logos/daisychain-vector-flower.svg';
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaPhoneAlt,
+  FaEnvelope,
+} from 'react-icons/fa';
+import DaisychainFullLogo from '../../public/images/logos/daisychainjewellers-full-logo.svg';
 
 const Footer: React.FC = () => {
-    
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -17,43 +22,52 @@ const Footer: React.FC = () => {
       "telephone": "+441442236651",
       "contactType": "Customer Service",
       "areaServed": "UK",
-      "availableLanguage": ["English"]
+      "availableLanguage": ["English"],
     },
     "sameAs": [
       "https://instagram.com/daisychainjewellers",
-      "https://facebook.com/daisychainjewellers"
-    ]
+      "https://facebook.com/daisychainjewellers",
+    ],
   };
 
   return (
-    <footer
-      className={`${styles.footerSection} section-horizontal-padding`}
-    >
+    <footer className={`${styles.footerSection} section-horizontal-padding`}>
       <Script
         id="footer-structured-data"
         type="application/ld+json"
         strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
       />
 
       <div className={`container css-grid`}>
+        {/* Logo and Description */}
         <div className={`${styles.footerDiv} ${styles.logoDiv}`}>
-          <a href="/" aria-label="Daisychain Jewellers Home" className={`${styles.daisychainFooterLogo}`}>
-            <DaisychainVector alt="Daisychain Jewellers Logo"/>
+          <a
+            href="/"
+            aria-label="Daisychain Jewellers Home"
+            className={styles.daisychainFooterLogo}
+          >
+            <DaisychainFullLogo alt="Daisychain Jewellers Logo" />
           </a>
-          <p className={`${styles.daisychainDescriptionParagraph}`}>
-            We are a Family-Run Jewellers Based in Boxmoor, Hemel Hempstead, specializing in Bespoke Jewellery, Engagement & Wedding Ring Design.
+          <p className={styles.daisychainDescriptionParagraph}>
+            We are a Family-Run Jewellers Based in Boxmoor, Hemel Hempstead with
+            an In-House Showroom & Workshop.
           </p>
         </div>
 
         {/* Visit Us */}
-        <div className={`${styles.footerDiv}`}>
-          <h2 className={`${styles.footerMainHeading}`}>Visit Us</h2>
+        <div className={styles.footerDiv}>
+          <h2 className={styles.footerMainHeading}>Visit Us</h2>
           <div className={styles.footerSubDiv}>
             {/* Opening Hours */}
             <div className={styles.openingHours}>
               <h3 className={styles.footerSubHeading}>Opening Hours</h3>
-              <table className={styles.openingHoursTable} aria-label="Opening Hours">
+              <table
+                className={styles.openingHoursTable}
+                aria-label="Opening Hours"
+              >
                 <tbody>
                   <tr>
                     <th scope="row">Monday & Sunday</th>
@@ -61,7 +75,7 @@ const Footer: React.FC = () => {
                   </tr>
                   <tr>
                     <th scope="row">Tuesday - Saturday</th>
-                    <td>9:30am-5pm</td>
+                    <td>9:30am - 5pm</td>
                   </tr>
                 </tbody>
               </table>
@@ -69,25 +83,26 @@ const Footer: React.FC = () => {
 
             {/* Shop Address */}
             <div className={styles.shopAddress}>
-              <h3 className={styles.body}>Shop Address</h3>
+              <h3 className={styles.footerSubHeading}>Shop Address</h3>
               <address className={styles.address}>
-                <span>Daisychain Jewellers</span>
-                <span>47 St Johns Road</span>
-                <span>Boxmoor, Hemel Hempstead</span>
-                <span>Hertfordshire HP1 1QQ</span>
+                <p>Daisychain Jewellers</p>
+                <p>47 St Johns Road</p>
+                <p>Boxmoor, Hemel Hempstead</p>
+                <p>Hertfordshire HP1 1QQ</p>
               </address>
             </div>
           </div>
         </div>
 
         {/* Get In Touch */}
-        <div className={`${styles.footerDiv}`}>
-          <h2 className={`${styles.footerMainHeading}`}>Get In Touch</h2>
+        <div className={styles.footerDiv}>
+          <h2 className={styles.footerMainHeading}>Get In Touch</h2>
           <div className={styles.footerSubDiv}>
             {/* Telephone */}
             <div className={styles.contactDetail}>
               <h3 className={styles.footerSubHeading}>Telephone</h3>
-              <span className={styles.footerBodyText}>
+              <p className={styles.footerBodyText}>
+                <FaPhoneAlt aria-hidden="true" />
                 <a
                   href="tel:01442236651"
                   className={styles.contactLink}
@@ -95,13 +110,14 @@ const Footer: React.FC = () => {
                 >
                   01442 236651
                 </a>
-              </span>
+              </p>
             </div>
 
             {/* Email */}
             <div className={styles.contactDetail}>
-              <h3 className={styles.footerSubheading}>Email</h3>
-              <span className={styles.footerBodyText}>
+              <h3 className={styles.footerSubHeading}>Email</h3>
+              <p className={styles.footerBodyText}>
+                <FaEnvelope aria-hidden="true" />
                 <a
                   href="mailto:marc@daisychainjewellers.co.uk"
                   className={styles.contactLink}
@@ -109,7 +125,7 @@ const Footer: React.FC = () => {
                 >
                   marc@daisychainjewellers.co.uk
                 </a>
-              </span>
+              </p>
             </div>
 
             {/* Social Media */}
@@ -124,7 +140,7 @@ const Footer: React.FC = () => {
                     className={styles.socialLink}
                     aria-label="Visit our Instagram page"
                   >
-                    <FaInstagram /> Instagram
+                    <FaInstagram aria-hidden="true" /> Instagram
                   </a>
                 </li>
                 <li>
@@ -135,7 +151,7 @@ const Footer: React.FC = () => {
                     className={styles.socialLink}
                     aria-label="Visit our Facebook page"
                   >
-                    <FaFacebookF /> Facebook
+                    <FaFacebookF aria-hidden="true" /> Facebook
                   </a>
                 </li>
               </ul>
@@ -144,11 +160,11 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Pages */}
-        <div className={`${styles.footerDiv}`}>
-          <h2 className={`${styles.footerMainHeading}`}>Pages</h2>
+        <div className={styles.footerDiv}>
+          <h2 className={styles.footerMainHeading}>Pages</h2>
           <div className={styles.footerSubDiv}>
             {/* Information Pages */}
-            <nav aria-label="Information Pages">
+            <nav className={styles.listDiv} aria-label="Information Pages">
               <h3 className={styles.footerSubHeading}>Information</h3>
               <ul className={styles.pagesList}>
                 <li>
@@ -157,22 +173,22 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/engagement-wedding" className={styles.pageLink}>
-                    Engagement & Wedding
+                  <a href="/coming-soon" className={styles.pageLink}>
+                    Engagement &amp; Wedding
                   </a>
                 </li>
                 <li>
-                  <a href="/our-services" className={styles.pageLink}>
+                  <a href="/coming-soon" className={styles.pageLink}>
                     Our Services
                   </a>
                 </li>
                 <li>
-                  <a href="/ethics-values" className={styles.pageLink}>
-                    Ethics & Values
+                  <a href="/coming-soon" className={styles.pageLink}>
+                    Ethics &amp; Values
                   </a>
                 </li>
                 <li>
-                  <a href="/contact-us" className={styles.pageLink}>
+                  <a href="/coming-soon" className={styles.pageLink}>
                     Contact Us
                   </a>
                 </li>
@@ -180,21 +196,21 @@ const Footer: React.FC = () => {
             </nav>
 
             {/* Legal Pages */}
-            <nav aria-label="Legal Pages">
+            <nav className={styles.listDiv} aria-label="Legal Pages">
               <h3 className={styles.footerSubHeading}>Legal</h3>
               <ul className={styles.pagesList}>
                 <li>
-                  <a href="/terms-conditions" className={styles.pageLink}>
-                    Terms & Conditions
+                  <a href="/coming-soon" className={styles.pageLink}>
+                    Terms &amp; Conditions
                   </a>
                 </li>
                 <li>
-                  <a href="/cookies-policy" className={styles.pageLink}>
+                  <a href="/coming-soon" className={styles.pageLink}>
                     Cookies Policy
                   </a>
                 </li>
                 <li>
-                  <a href="/privacy-policy" className={styles.pageLink}>
+                  <a href="/coming-soon" className={styles.pageLink}>
                     Privacy Policy
                   </a>
                 </li>

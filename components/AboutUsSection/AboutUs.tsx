@@ -7,6 +7,7 @@ import DaisychainFlowerTransparent from '../../public/images/logos/daisychainjew
 const AboutUs: React.FC = () => {
     return (
         <section
+            id="about-us-section"
             className={`${styles.aboutUsSection} section-horizontal-padding sub-section-padding`}
             aria-labelledby="about-us-heading"
         >

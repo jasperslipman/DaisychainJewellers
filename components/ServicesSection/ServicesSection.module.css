@@ -12,6 +12,13 @@
     overflow: hidden;
     box-shadow: var(--shadow-medium);
     grid-column: 1 / 13;
+    
+    
+    
+}
+
+#engagement-wedding-home {
+    scroll-margin-top: 250px;
 }
 
 .serviceImage {
@@ -23,7 +30,7 @@
     display: flex;
     flex-direction: column;
     padding: var(--xl-gap);
-    gap: var(--m-gap);
+    gap: var(--heading-gap);
     align-items: start;
     width: 50%;
     align-self: center;

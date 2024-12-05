@@ -64,6 +64,7 @@
 
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
+    scroll-padding-top: var(--navbar-height); /* Adjust for navbar height */
 }
 
 /* Global Custom Propeties */

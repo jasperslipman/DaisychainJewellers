@@ -48,7 +48,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
                     {/* Engagement & Wedding */}
                     <li className={styles.mobileNavItem}>
                         <NavLink
-                            href="/engagement-wedding"
+                            href="/#engagement-wedding-home"
                             className={styles.mobileNavLink}
                             activeClassName={styles.activeLink}
                             onClick={toggleMenu}
@@ -58,22 +58,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
                         <ul className={styles.mobileSubNavList}>
                             <li className={styles.mobileSubNavItem}>
                                 <NavLink
-                                    href="/coming-soon#engagement"
+                                    href="/#engagement-wedding-home"
                                     className={styles.mobileSubNavLink}
                                     activeClassName={styles.activeLink}
                                     onClick={toggleMenu}
                                 >
-                                    Engagement
-                                </NavLink>
-                            </li>
-                            <li className={styles.mobileSubNavItem}>
-                                <NavLink
-                                    href="/coming-soon#wedding"
-                                    className={styles.mobileSubNavLink}
-                                    activeClassName={styles.activeLink}
-                                    onClick={toggleMenu}
-                                >
-                                    Wedding
+                                    Coming Soon
                                 </NavLink>
                             </li>
                         </ul>
@@ -82,7 +72,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
                     {/* Our Services */}
                     <li className={styles.mobileNavItem}>
                         <NavLink
-                            href="/our-services"
+                            href="/#our-services-home"
                             className={styles.mobileNavLink}
                             activeClassName={styles.activeLink}
                             onClick={toggleMenu}
@@ -92,22 +82,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
                         <ul className={styles.mobileSubNavList}>
                             <li className={styles.mobileSubNavItem}>
                                 <NavLink
-                                    href="/coming-soon#service1"
+                                    href="/#our-services-home"
                                     className={styles.mobileSubNavLink}
                                     activeClassName={styles.activeLink}
                                     onClick={toggleMenu}
                                 >
-                                    Service 1
-                                </NavLink>
-                            </li>
-                            <li className={styles.mobileSubNavItem}>
-                                <NavLink
-                                    href="/coming-soon#service2"
-                                    className={styles.mobileSubNavLink}
-                                    activeClassName={styles.activeLink}
-                                    onClick={toggleMenu}
-                                >
-                                    Service 2
+                                    Coming Soon
                                 </NavLink>
                             </li>
                         </ul>
@@ -115,7 +95,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
                     
                     <li className={styles.mobileNavItem}>
                         <NavLink
-                            href="/ethics-values"
+                            href="/#about-us-section"
                             className={styles.mobileNavLink}
                             activeClassName={styles.activeLink}
                             onClick={toggleMenu}

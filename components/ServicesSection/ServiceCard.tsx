@@ -12,6 +12,7 @@ interface ServiceCardProps {
   paragraph: string;
   isReversed?: boolean;
   gridRow?: number;
+  sectionId: string; 
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -21,9 +22,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   paragraph,
   isReversed = false,
   gridRow,
+  sectionId,
 }) => {
   return (
     <article
+      id={sectionId}
       className={classNames(styles.serviceCard, {
         [styles.reversed]: isReversed,
       })}
@@ -34,24 +37,22 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <Image
           src={imageSrc}
           alt={altText}
-          layout="fill" // Allows the image to fill the parent container
-          objectFit="cover" // Ensures the image covers the container without distortion
+          fill // Use 'fill' for responsive images
+          style={{ objectFit: 'cover' }}
           className={styles.serviceImage}
-          placeholder="blur" // Shows a blurred placeholder while loading
-          blurDataURL="../images/photos/daisychain-engagement-wedding-image-blur.jpg" // Ensure this image exists
+          placeholder="blur"
+          blurDataURL="/images/photos/daisychain-engagement-wedding-image-blur.jpg" // Ensure this path is correct
         />
       </div>
 
       {/* Text Content */}
       <div className={styles.serviceTextContent}>
-        <h2 className={styles.serviceHeading} aria-label={`Service: ${heading}`}>
-          {heading}
-        </h2>
+        <h2 className={styles.serviceHeading}>{heading}</h2>
         <p className={styles.serviceParagraph}>{paragraph}</p>
         <Link
           href="/coming-soon"
-          className="button"
           aria-label={`Learn more about ${heading}`}
+          className="button"
         >
           Learn More
         </Link>

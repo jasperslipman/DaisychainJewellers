@@ -23,26 +23,24 @@ const DesktopNavMenu: React.FC = () => {
         <DropdownMenu
           id="engagement-wedding-menu"
           title="Engagement & Wedding"
-          link="/engagement-wedding" // Added link property
+          link="/#engagement-wedding-home" // Added link property
           items={[
-            { label: 'Engagement', link: '/coming-soon#engagement' },
-            { label: 'Wedding', link: '/coming-soon#wedding' },
+            { label: 'Coming Soon', link: '/#engagement-wedding-home' },
           ]}
         />
 
         <DropdownMenu
           id="our-services-menu"
           title="Our Services"
-          link="/our-services" // Added link property
+          link="/#our-services-home" // Added link property
           items={[
-            { label: 'Service 1', link: '/coming-soon#service1' },
-            { label: 'Service 2', link: '/coming-soon#service2' },
+            { label: 'Coming Soon', link: '/#our-services-home' },
           ]}
         />
 
         <li>
           <NavLink
-            href="/ethics-values"
+            href="/#about-us-section"
             className={`${styles.navLink} ${styles.linkWrapper}`}
             activeClassName={styles.activeLink}
           >
