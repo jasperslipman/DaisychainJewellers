@@ -3,7 +3,7 @@
 }
 
 .daisychainVectorFlower {
-    grid-column: 6 / 8;
+    grid-column: 2 / 4;
     object-fit: cover;
     overflow: hidden;
     justify-self: center;
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--heading-gap);
-    grid-column: 3 / 11; 
+    grid-column: 1 / 5; 
 }
 
 .aboutUsHeading {
@@ -27,4 +27,43 @@
     font-size: var(--body-font-size);
     color: var(--font-color-white); 
     text-align: center;
+}
+
+/* Breakpoints */ 
+
+/* Media Query for Small Phones */
+@media (max-width: 479px) {
+    
+}
+
+/* Media Query for Large Phones */
+@media (min-width: 480px) {
+    
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) {
+    .daisychainVectorFlower {
+        grid-column: 4 / 6;
+    }
+    
+    .aboutUsContent {
+        
+        grid-column: 2 / 8; 
+    }
+    
+
+    
+}
+
+/* Media Query for Large Desktops */
+@media (min-width: 1280px) {
+    .daisychainVectorFlower {
+        grid-column: 6 / 8;
+    }
+    
+    .aboutUsContent {
+        
+        grid-column: 3 / 11; 
+    }
 }
