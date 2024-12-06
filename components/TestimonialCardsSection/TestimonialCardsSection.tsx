@@ -30,7 +30,6 @@ const testimonials: Testimonial[] = [
 ];
 
 const TestimonialCardsSection: React.FC = () => {
-    // Prepare structured data for SEO
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -56,8 +55,6 @@ const TestimonialCardsSection: React.FC = () => {
     return (
         <>
             <Head>
-                <title>Customer Testimonials - Daisychain Jewellers</title>
-                <meta name="description" content="Read testimonials from our satisfied customers about their experiences with Daisychain Jewellers, specializing in bespoke engagement and wedding rings." />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
@@ -75,11 +72,14 @@ const TestimonialCardsSection: React.FC = () => {
                             Testimonials
                         </h2>
                         <p className={styles.testimonialsCardsParagraph}>
-                            Read what our customers have to say about their experiences with Daisychain Jewellers. We're proud to share testimonials highlighting our craftsmanship, personalized service, and dedication to meeting all your bespoke jewellery needs.
+                            Read what our customers have to say about their experiences with Daisychain Jewellers. 
+                        </p>
+
+                        <p className={styles.testimonialsCardsParagraph}>
+                            We're proud to share testimonials highlighting our craftsmanship, personalized service, and dedication to meeting all your bespoke jewellery needs.
                         </p>
                     </div>
                     
-                    {/* Wrap testimonials in a list */}
                     <ul className={styles.testimonialsCardsHolder}>
                         {testimonials.map((testimonial, index) => (
                             <li className={styles.liCard} key={index}>
@@ -87,7 +87,7 @@ const TestimonialCardsSection: React.FC = () => {
                                     text={testimonial.text}
                                     author={testimonial.author}
                                     reviews={testimonial.reviews}
-                                    variant={index === 1 ? 'main' : 'secondary'} // Middle card is 'main'
+                                    variant={index === 1 ? 'main' : 'secondary'} 
                                 />
                             </li>
                         ))}

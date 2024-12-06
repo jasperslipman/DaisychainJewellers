@@ -10,6 +10,8 @@ interface ServiceCardProps {
   altText: string;
   heading: string;
   paragraph: string;
+  paragraph2?: string;
+  paragraph3?: string;
   isReversed?: boolean;
   gridRow?: number;
   sectionId: string; 
@@ -20,6 +22,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   altText,
   heading,
   paragraph,
+  paragraph2,
+  paragraph3,
   isReversed = false,
   gridRow,
   sectionId,
@@ -49,6 +53,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div className={styles.serviceTextContent}>
         <h2 className={styles.serviceHeading}>{heading}</h2>
         <p className={styles.serviceParagraph}>{paragraph}</p>
+        <p className={styles.serviceParagraph}>{paragraph2}</p>
+        <p className={styles.serviceParagraph}>{paragraph3}</p>
         <Link
           href="/coming-soon"
           aria-label={`Learn more about ${heading}`}
