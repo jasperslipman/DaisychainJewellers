@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from './TestimonialCardsSection.module.css';
 import classNames from 'classnames';
-/* import DaisyVectorFlower from '../../public/images/logos/daisychain-vector-flower.svg'; */ 
+import DaisyVectorFlower from '../../public/images/logos/daisychain-vector-flower.svg'; 
 
 interface TestimonialCardProps {
     text: string;
@@ -32,7 +32,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ text, author, reviews
                 
                 <div className={styles.daisyReviewChart} aria-hidden="true">
                     {Array.from({ length: validReviews }).map((_, index) => (
-                         <div key={index} className={styles.daisyReviewImage} /> 
+                         <DaisyVectorFlower key={index} className={styles.daisyReviewImage} /> 
                     ))}
                 </div>
 

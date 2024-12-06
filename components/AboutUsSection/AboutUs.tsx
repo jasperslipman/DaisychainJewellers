@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styles from './AboutUs.module.css';
-/* import DaisychainFlowerTransparent from '../../public/images/logos/daisychainjewellers-transparent-flower.svg'; */
+import DaisychainFlowerTransparent from '../../public/images/logos/daisychainjewellers-transparent-flower.svg'; 
 
 const AboutUs: React.FC = () => {
     return (
@@ -12,7 +12,7 @@ const AboutUs: React.FC = () => {
             aria-labelledby="about-us-heading"
         >
             <div className={`container css-grid`}> 
-                {/* <DaisychainFlowerTransparent className={styles.daisychainVectorFlower} aria-hidden="true" /> */}
+                 <DaisychainFlowerTransparent className={styles.daisychainVectorFlower} aria-hidden="true" /> 
                 
                 <div className={styles.aboutUsContent}> 
                     <h2 id="about-us-heading" className={styles.aboutUsHeading}>

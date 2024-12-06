@@ -1,6 +1,9 @@
 const nextConfig = {
   webpack: (config) => {
-    console.log('Webpack Config:', JSON.stringify(config.module.rules, null, 2));
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
     return config;
   },
 };

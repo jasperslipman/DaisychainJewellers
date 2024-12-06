@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import NavLink from './NavLink'; 
 import styles from './NavBar.module.css';
-/* import DropdownIcon from '../../public/images/icons/daisychain-drop-down-icon.svg'; */
+import DropdownIcon from '../../public/images/icons/daisychain-drop-down-icon.svg'; 
 import { useRouter } from 'next/router';
 
 interface DropdownMenuProps {
@@ -77,7 +77,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ id, title, link, items }) =
         id={id}
       >
         {title}
-        {/* <DropdownIcon className={styles.dropdownIcon} aria-hidden="true" /> */}
+        <DropdownIcon className={styles.dropdownIcon} aria-hidden="true" /> 
       </NavLink>
       {isOpen && (
         <ul
