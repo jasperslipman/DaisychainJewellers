@@ -1,8 +1,8 @@
 // SeasonalSection.tsx
 import React from 'react';
 import styles from './SeasonalSection.module.css';
-import ChristmasDecor1 from '../../public/images/decorative/Daisychain-snow-1.svg';
-import ChristmasDecor2 from '../../public/images/decorative/Daisychain-snow-2.svg';
+/* import ChristmasDecor1 from '../../public/images/decorative/Daisychain-snow-1.svg';
+import ChristmasDecor2 from '../../public/images/decorative/Daisychain-snow-2.svg'; */ 
 
 const SeasonalSection: React.FC = () => {
     return (
@@ -11,12 +11,12 @@ const SeasonalSection: React.FC = () => {
             aria-labelledby="seasonal-heading"
         >
             <div className={`container css-grid`}>
-                <ChristmasDecor1
+               {/* <ChristmasDecor1
                     className={styles.seasonalDecor1}
                     aria-hidden="true"
                     focusable="false"
                     role="presentation"
-                />
+                /> */}
                 
                 <div className={styles.seasonalContent}>   
                     <h2 id="seasonal-heading" className={styles.seasonalHeading}>
@@ -41,12 +41,12 @@ const SeasonalSection: React.FC = () => {
                     </p>
                 </div>
                 
-                <ChristmasDecor2
+                {/* <ChristmasDecor2
                     className={styles.seasonalDecor2}
                     aria-hidden="true"
                     focusable="false"
                     role="presentation"
-                />
+                /> */}
             </div>
         </section>
     );

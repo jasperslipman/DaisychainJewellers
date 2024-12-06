@@ -8,7 +8,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from 'react-icons/fa';
-import DaisychainFullLogo from '../../public/images/logos/daisychainjewellers-full-logo.svg';
+/* import DaisychainFullLogo from '../../public/images/logos/daisychainjewellers-full-logo.svg'; */ 
 
 const Footer: React.FC = () => {
   const structuredData = {
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
             aria-label="Daisychain Jewellers Home"
             className={styles.daisychainFooterLogo}
           >
-            <DaisychainFullLogo alt="Daisychain Jewellers Logo" />
+            {/* <DaisychainFullLogo alt="Daisychain Jewellers Logo" /> */}
           </a>
           <p className={styles.daisychainDescriptionParagraph}>
             We are a Family-Run Jewellers Based in Boxmoor, Hemel Hempstead with

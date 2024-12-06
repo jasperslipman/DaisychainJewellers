@@ -6,7 +6,7 @@ import styles from './NavBar.module.css';
 import HamburgerMenu from './HamburgerMenu';
 import DesktopNavMenu from './DesktopMenu';
 import MobileMenu from './MobileMenu';
-import DaisychainLogo from '../../public/images/logos/daisychain-logo-letter-group.svg';
+/* import DaisychainLogo from '../../public/images/logos/daisychain-logo-letter-group.svg'; */ 
 
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
                         aria-label="Homepage"
                     >
                        
-                        <DaisychainLogo className={`${styles.daisychainLogo}`} aria-label="Daisychain Jewellers Logo" />
+                       {/* <DaisychainLogo className={`${styles.daisychainLogo}`} aria-label="Daisychain Jewellers Logo" /> */}
                     
                     </Link>
 
