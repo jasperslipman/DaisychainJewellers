@@ -41,11 +41,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <Image
           src={imageSrc}
           alt={altText}
-          fill // Use 'fill' for responsive images
+          fill 
           style={{ objectFit: 'cover' }}
           className={styles.serviceImage}
           placeholder="blur"
-          blurDataURL="/images/photos/daisychain-engagement-wedding-image-blur.jpg" // Ensure this path is correct
+          blurDataURL="/images/photos/daisychain-engagement-wedding-image-blur.jpg" 
         />
       </div>
 

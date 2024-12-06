@@ -11,7 +11,6 @@ const SeasonalSection: React.FC = () => {
             aria-labelledby="seasonal-heading"
         >
             <div className={`container css-grid`}>
-                {/* Decorative SVG - Hidden from Assistive Technologies */}
                 <ChristmasDecor1
                     className={styles.seasonalDecor1}
                     aria-hidden="true"
@@ -42,7 +41,6 @@ const SeasonalSection: React.FC = () => {
                     </p>
                 </div>
                 
-                {/* Decorative SVG - Hidden from Assistive Technologies */}
                 <ChristmasDecor2
                     className={styles.seasonalDecor2}
                     aria-hidden="true"

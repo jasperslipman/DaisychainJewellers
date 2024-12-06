@@ -48,21 +48,22 @@
     
 }
 
+
+
 .imageWrapper {
     position: relative;
     width: 100%;
     overflow: hidden;
-    aspect-ratio: 3 / 2;
+    padding-top: 66.666%; 
 }
 
-
-
-/* Fallback for browsers that don't support aspect-ratio */
-@supports not (aspect-ratio: 3 / 2) {
+@supports (aspect-ratio: 3 / 2) {
     .imageWrapper {
-        padding-top: 66.666%; /* 3:2 aspect ratio */
+        padding-top: 0; 
+        aspect-ratio: 3 / 2; 
     }
 }
+
 
 /* Media Query for Small Phones */
 @media (max-width: 479px) {

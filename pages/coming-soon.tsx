@@ -1,7 +1,7 @@
 // pages/coming-soon.tsx
 
 import React from 'react';
-import styles from './ComingSoon.module.css'; // Create this CSS module
+import styles from './ComingSoon.module.css'; 
 import Link from 'next/link';
 
 const ComingSoonPage: React.FC = () => {

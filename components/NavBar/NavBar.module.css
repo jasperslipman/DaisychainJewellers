@@ -3,7 +3,7 @@
     padding-top: var(--m-padding);
     padding-bottom: var(--m-padding);
     background-color: var(--secondary-foreground-color);
-    transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    transition: opacity 0.3s ease, background-color 0.3s ease; 
     opacity: 1; 
     position: sticky;
     top: 0; 
@@ -145,7 +145,6 @@
 
 /* Animations */ 
 
-/* Animation when the  Hamburger Menu is open */
 .open .bar:nth-child(1) {
     transform: rotate(45deg) translate(0.625rem, 0.625rem);
 }
