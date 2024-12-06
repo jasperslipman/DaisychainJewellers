@@ -10,9 +10,7 @@ const ContactUsSection: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "JewelryStore",
     "name": "Daisychain Jewellers",
-    "image": "https://www.yourwebsite.com/images/photos/daisychain-map.png",
-    "@id": "https://www.yourwebsite.com/#jewelrystore",
-    "url": "https://www.yourwebsite.com",
+    "url": "https://www.daisychainjewellers.co.uk",
     "telephone": "01442 236651",
     "email": "marc@daisychainjewellers.co.uk",
     "address": {
@@ -28,7 +26,7 @@ const ContactUsSection: React.FC = () => {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Monday",
         "opens": "00:00",
-        "closes": "00:00"
+        "closes": "00:00" 
       },
       {
         "@type": "OpeningHoursSpecification",
@@ -40,7 +38,7 @@ const ContactUsSection: React.FC = () => {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Sunday",
         "opens": "00:00",
-        "closes": "00:00"
+        "closes": "00:00" 
       }
     ],
     "sameAs": [

@@ -15,8 +15,7 @@ const Footer: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Daisychain Jewellers",
-    "url": "https://www.yourwebsite.com",
-    "logo": "https://www.yourwebsite.com/images/logos/daisychain-vector-flower.svg",
+    "url": "https://www.daisychainjewellers.co.uk",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+441442236651",
