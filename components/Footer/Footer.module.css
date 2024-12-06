@@ -7,7 +7,7 @@
 }
 
 .footerDiv {
-  grid-column: span 3;
+  grid-column: span 4;
   display: flex;
   flex-direction: column;
   gap: var(--heading-gap);
@@ -169,5 +169,19 @@
   flex-direction: column;
   gap: var(--heading-gap);
 }
+/* Media Query for Large Desktops */
+@media (min-width: 1280px) {
+  
+
+  .footerDiv {
+    grid-column: span 3;
+  }
+
+  
+
+  
+    
+}
+
 
 

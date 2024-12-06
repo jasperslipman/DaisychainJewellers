@@ -13,6 +13,18 @@ import FooterSection from '../components/Footer/Footer';
 const Home: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>Daisychain Jewellers - Bespoke Engagement & Wedding Rings in Hertfordshire</title>
+        <meta
+          name="description"
+          content="Discover Daisychain Jewellers in Hemel Hempstead, Hertfordshire, offering bespoke engagement and wedding rings, jewellery repair & restoreration, and expert craftsmanship."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.daisychainjewellers.co.uk/" />
+
+        {/* Favicon (SVG) */}
+        <link rel="icon" href="/images/logos/daisychain-vector-flower.svg" type="image/svg+xml" />
+      </Head>
       <Navbar />
       <HeroSection />
       <AboutUs />
