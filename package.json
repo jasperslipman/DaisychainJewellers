@@ -1,7 +1,7 @@
 {
   "name": "daisychainjewellers",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
