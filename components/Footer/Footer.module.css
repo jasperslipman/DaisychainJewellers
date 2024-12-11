@@ -45,10 +45,11 @@
 }
 
 .daisychainFooterLogo {
-  width: 50%;
+  width: 30%;
   height: auto;
   align-self: center;
   justify-self: center;
+  height: 100%;
 }
 
 .daisychainDescriptionParagraph {
@@ -69,7 +70,7 @@
 .openingHoursTable td {
   font-family: var(--body-font);
   font-weight: var(--font-weight-regular);
-  padding: var(--xs-gap);
+  padding: var(--s-padding);
   padding-left: 0;
   text-align: start;
   color: var(--accent-color);
@@ -100,11 +101,14 @@
   flex-direction: column;
   gap: var(--xs-gap);
   font-style: normal;
+
 }
 
 .address p {
   font-size: var(--body-small-font-size);
   color: var(--accent-color);
+  padding-top: var(--xs-padding);
+  padding-bottom: var(--xs-padding);
 }
 
 /* Column 3 */
@@ -124,6 +128,8 @@
 .contactLink {
   color: var(--accent-color);
   font-size: var(--body-small-font-size);
+  padding-top: var(--xs-padding);
+  padding-bottom: var(--xs-padding);
 }
 
 .contactLink:hover {
@@ -136,6 +142,8 @@
   gap: var(--s-gap);
   color: var(--accent-color);
   font-size: var(--body-small-font-size);
+  padding-top: var(--xs-padding);
+  padding-bottom: var(--xs-padding);
   
 
 }
@@ -158,9 +166,16 @@
   gap: var(--xs-gap);
 }  
 
+.pagesList li {
+  padding-top: var(--xs-padding);
+  padding-bottom: var(--xs-padding);
+}
+
 .pageLink {
   font-size: var(--body-small-font-size);
   color: var(--accent-color);
+  padding-top: var(--xs-padding);
+  padding-bottom: var(--xs-padding);
 }
 
 .pageLink:hover {
@@ -178,6 +193,10 @@
 
   .footerDiv {
     grid-column: span 3;
+  }
+
+  .daisychainFooterLogo {
+    width: 60%;
   }
 
   

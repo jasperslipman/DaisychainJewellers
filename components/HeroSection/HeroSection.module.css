@@ -4,11 +4,13 @@
     height: calc(95svh - var(--navbar-height));
     background-size: cover;
     background-position: center;
+    display: none;
     
 }
 
 .heroContainer {
     height: 100%;
+    
 }
 
 .heroCard { 
@@ -43,7 +45,32 @@
     color: var(--font-color-black);
 }
 
-/* Breakpoints */ 
+/* Hero Mobile */ 
+.mobileHeroImageContainer {
+    display: flex;
+}
+
+.mobileHeroImage {
+    
+    position: relative !important;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    
+}
+
+.mobileHeroTextSection {
+    background-color: var(--accent-color);
+    flex-direction: column;
+    gap: var(--m-gap);
+    display: flex;
+    
+   
+}
+
+
+
+/* Breakpoints */
 
 /* Media Query for Small Phones */
 @media (max-width: 479px) {
@@ -59,8 +86,16 @@
 @media (min-width: 768px) {
     .heroCard { 
         padding: var(--m-gap);
-        grid-column: 1 / 7;
+        grid-column: 1 / 6;
         gap: var(--m-gap);
+    }
+
+    .heroSection {
+        display: block;
+    }
+
+    .heroSectionMobile {
+        display: none;
     }
     
 
