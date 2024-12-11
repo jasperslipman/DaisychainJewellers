@@ -1,7 +1,7 @@
 .heroSection {
     width: 100%;
     background-image: url("../../public/images/photos/daisychain-background.jpg"); 
-    height: calc(95svh - var(--navbar-height));
+    height: calc(95vh - var(--navbar-height));
     background-size: cover;
     background-position: center;
     display: none;
@@ -48,15 +48,29 @@
 /* Hero Mobile */ 
 .mobileHeroImageContainer {
     display: flex;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
 }
 
 .mobileHeroImage {
-    
     position: relative !important;
-    object-fit: cover;
+    top: 0;
+    left: 0;
     width: 100%;
-    aspect-ratio: 16 / 9;
-    
+    height: 100%;
+    object-fit: cover;
+}
+
+@supports (aspect-ratio: 16 / 9) {
+    .mobileHeroImageContainer {
+        padding-bottom: 0; 
+    }
+    .mobileHeroImage {
+        position: relative; 
+        height: auto; 
+        aspect-ratio: 16 / 9;
+    }
 }
 
 .mobileHeroTextSection {
