@@ -65,6 +65,8 @@
 html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
     scroll-padding-top: var(--navbar-height); /* Adjust for navbar height */
+    
+    
 }
 
 /* Global Custom Propeties */
@@ -646,6 +648,7 @@ p, a, span, li, label, input, textarea, select {
     max-width: 1440px; 
     justify-self: center;
     width: 100%;
+    margin: 0 auto;
 }
 
 
