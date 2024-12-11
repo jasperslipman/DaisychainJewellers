@@ -11,7 +11,7 @@ const ContactUsSection: React.FC = () => {
     "@type": "JewelryStore",
     "name": "Daisychain Jewellers",
     "url": "https://www.daisychainjewellers.co.uk",
-    "telephone": "01442 236651",
+    "telephone": "+441442236651",
     "email": "marc@daisychainjewellers.co.uk",
     "address": {
       "@type": "PostalAddress",
@@ -31,7 +31,7 @@ const ContactUsSection: React.FC = () => {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
+        "opens": "09:30",
         "closes": "17:00"
       },
       {
@@ -91,23 +91,23 @@ const ContactUsSection: React.FC = () => {
                 </tr>
                 <tr>
                   <th scope="row">Tuesday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Wednesday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Thursday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Friday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Saturday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Sunday</th>

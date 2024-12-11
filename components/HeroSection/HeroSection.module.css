@@ -36,7 +36,7 @@
 .heroParagraph {
     color: var(--font-color-black);
     font-size: var(--body-large-font-size);
-    font-weight: var(--font-weight-semi-bold);
+    font-weight: var(--font-weight-medium);
 }
 
 .heroSubHeader {

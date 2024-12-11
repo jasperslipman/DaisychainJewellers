@@ -107,7 +107,7 @@
 .testimonialAuthor {
     font-size: var(--body-font-size);
     color: var(--font-color-black);
-    font-weight: var(--font-weight-semi-bold);
+    font-weight: var(--font-weight-medium);
 }
 
 /* Breakpoints */ 

@@ -121,6 +121,7 @@ html {
 
     --font-weight-bold: 700; 
     --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
     --font-weight-regular: 400;
     --font-weight-light: 300;
 
@@ -365,38 +366,38 @@ html {
 
 h1 {
     font-size: var(--h1-font-size);
-    font-weight: var(--font-weight-bold); 
+   
 }
 
 h2 {
     font-size: var(--h2-font-size);
-    font-weight: var(--font-weight-semi-bold);
+    
 }
 
 h3 {
     font-size: var(--h3-font-size);
-    font-weight: var(--font-weight-semi-bold);
+    
 }
 
 h4 {
     font-size: var(--h4-font-size);
-    font-weight: var(--font-weight-semi-bold);
+    
 }
 
 h5 {
     font-size: var(--h5-font-size);
-    font-weight: var(--font-weight-semi-bold);
+    
 }
 
 h6 {
-    font-size: var(--h6-font-size);
-    font-weight: var(--font-weight-semi-bold);
+    font-size: var(--h6-font-size); 
 }
 
 h1, h2, h3, h4, h5, h6 {
     line-height: var(--heading-line-height);
     font-family: var(--heading-font);
     color: var(--font-color-primary);
+    font-weight: var(--font-weight-medium);
 }
 
 p, a, span, li, label, input, textarea, select {
@@ -420,7 +421,7 @@ p, a, span, li, label, input, textarea, select {
 .button {
     padding: var(--button-padding);
     font-family: var(--body-font);
-    font-weight: var(--font-weight-semi-bold);
+    font-weight: var(--font-weight-medium);
     font-size: var(--body-large-font-size);
     background-color: var(--button-primary-background-color);
     cursor: pointer;
