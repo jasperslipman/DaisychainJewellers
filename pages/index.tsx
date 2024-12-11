@@ -11,6 +11,13 @@ import SeasonalSection from '../components/SeasonalSection/SeasonalSection';
 import ContactUsSection from '../components/ContactUsSection/ContactUsSection';
 import FooterSection from '../components/Footer/Footer';
 
+export async function getStaticProps() {
+  return {
+      props: {}, 
+      revalidate: 60, 
+  };
+}
+
 const Home: React.FC = () => {
   return (
     <>
