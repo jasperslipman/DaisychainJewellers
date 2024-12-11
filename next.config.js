@@ -11,7 +11,7 @@ module.exports = {
   images: {
     domains: ['main.d176itksgiqcki.amplifyapp.com'],
     formats: ['image/avif', 'image/webp'],
-    deviceSizes: [320, 420, 768, 1024, 1200],
+    deviceSizes: [320, 480, 768, 1280, 1600],
     imageSizes: [16, 32, 48, 64, 96],
     minimumCacheTTL: 60,
   },
@@ -35,7 +35,6 @@ module.exports = {
           },
         ],
       },
-      // Add more rules if necessary
     ];
   },
 };
