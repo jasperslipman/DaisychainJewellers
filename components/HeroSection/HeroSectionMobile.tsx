@@ -17,6 +17,7 @@ const HeroSectionMobile: React.FC = () => {
                     fill
                     className={styles.mobileHeroImage}
                     loading="eager"
+                    priority 
                 />
             </div>
             <div className={`${styles.mobileHeroTextSection} main-section-padding section-horizontal-padding`}>

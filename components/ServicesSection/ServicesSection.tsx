@@ -42,10 +42,7 @@ const ServicesSection: React.FC = () => {
       className={`${styles.servicesSection} section-horizontal-padding sub-section-padding`}
       aria-labelledby="services-heading" 
     >
-      <h2 id="services-heading" className={styles.sectionHeading}>
-        Our Services
-      </h2>
-
+    
       <div className="container css-grid">
         {services.map((service, index) => (
           <ServiceCard
