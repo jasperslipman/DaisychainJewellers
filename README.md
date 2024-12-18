@@ -74,11 +74,6 @@ Here are the Google PageSpeed scores for the project:
 
 Contributions, issues, and feature requests are welcome! Feel free to open a pull request or submit an issue.
 
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
