@@ -4,7 +4,7 @@
 
 ## About the Project
 
-This is a full-stack informational website designed to provide . The site features a responsive front-end and a robust back-end to deliver dynamic and engaging user experiences.
+Developed a modern, responsive website for a business to enhance their online presence, SEO performance, and overall user experience. Implemented scalable front-end and back-end solutions using React.js, Next.js, and Node.js, and deployed the application on AWS for optimized performance and reliability.
 
 ---
 
