@@ -37,6 +37,7 @@ module.exports = {
           },
         ],
       },
+      /* 
       // Content-Security-Policy header
       {
         source: '/(.*)',
@@ -58,6 +59,7 @@ module.exports = {
           },
         ],
       },
+      */ 
     ];
   },
 };
