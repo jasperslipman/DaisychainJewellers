@@ -99,7 +99,7 @@
 /* Media Query for Tablets */
 @media (min-width: 768px) {
     .heroCard { 
-        padding: var(--m-gap);
+        padding: var(--l-gap);
         grid-column: 1 / 6;
         gap: var(--m-gap);
     }
