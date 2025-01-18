@@ -1,4 +1,5 @@
 .seasonalSection {
+    display: none;
     background-color: var(--main-background-color);
 }
 

@@ -54,10 +54,11 @@
 
 .openingHoursTable th,
 .openingHoursTable td {
+  font-size: var(--body-font-size);
   font-family: var(--body-font);
   font-weight: var(--font-weight-regular);
   border: 1px solid 9;
-  padding: var(--s-gap);
+  padding: var(--xs-gap);
   padding-left: 0;
 
 }
