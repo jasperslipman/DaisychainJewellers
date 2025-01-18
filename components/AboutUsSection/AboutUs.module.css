@@ -8,7 +8,7 @@
     overflow: hidden;
     justify-self: center;
     grid-row: 1; 
-    width: 75%;
+    width: 50%;
 }
 
 .aboutUsContent {
@@ -27,6 +27,13 @@
     font-size: var(--body-font-size);
     color: var(--font-color-white); 
     text-align: center;
+}
+
+.aboutUsParagraphDesktop {
+    font-size: var(--body-font-size);
+    color: var(--font-color-white); 
+    text-align: center;
+    display: none;
 }
 
 /* Breakpoints */ 
@@ -58,6 +65,14 @@
 
 /* Media Query for Large Desktops */
 @media (min-width: 1280px) {
+    .aboutUsParagraph {
+        display: none;
+    }
+
+    .aboutUsParagraphDesktop {
+        display: block;
+    }
+    
     .daisychainVectorFlower {
         grid-column: 6 / 8;
     }
