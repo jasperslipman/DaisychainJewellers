@@ -1,4 +1,13 @@
 /* ServicesSection.module.css */
+.service-text-content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--xxxl-gap);
+    gap: var(--m-gap);
+    align-items: start;
+    width: 50%;
+    align-self: center;
+}
 
 .servicesSection {
     background-color: var(--main-background-color);
