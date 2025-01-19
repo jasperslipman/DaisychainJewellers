@@ -81,7 +81,7 @@
     .seasonalDecor1 {
         grid-column: 1 / 3;
         align-self: end; 
-        justify-self: start;
+        justify-self: flex-start;
         grid-row: 1; 
     }
     

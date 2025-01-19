@@ -4,7 +4,7 @@
     flex-direction: column;
     padding: var(--xxxl-gap);
     gap: var(--m-gap);
-    align-items: start;
+    align-items: flex-start;
     width: 50%;
     align-self: center;
 }
@@ -50,7 +50,7 @@
 .serviceParagraph {
     color: var(--font-color-primary);
     font-size: var(--body-font-size);
-    align-self: start;
+    align-self: flex-start;
 }
 
 .reversed {
@@ -124,7 +124,7 @@
     }
 
     .serviceTextContent {
-        align-items: start;
+        align-items: flex-start;
         width: 50%;
         padding: var(--xl-padding);
     }

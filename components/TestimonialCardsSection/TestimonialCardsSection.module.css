@@ -49,6 +49,12 @@
     text-align: center;
 }
 
+.testimonialsCardsParagraphDesktop {
+    color: var(--font-color-black);
+    text-align: center;
+    display: none;
+}
+
 .testimonialsCardsHolder {
     display: flex;
     flex-direction: column;
@@ -137,6 +143,18 @@
         grid-column: 1 / 9;
         
     }
+
+    .testimonialsCardsParagraph {
+        
+        display: none;
+    }
+    
+    .testimonialsCardsParagraphDesktop {
+        
+        display: block;
+    }
+
+    
     
 
     
@@ -158,8 +176,7 @@
     }
 
     .secondary {
-        height: 90%;
-    
+        height: 100%; 
     }
 
     .testimonialCard {
@@ -168,12 +185,3 @@
     }
 }
 
-/* Media Query for Extra Large Desktops */
-@media (min-width: 1440px) {
-    
-}
-
-/* Media Query for Ultra-Wide Screens */
-@media (min-width: 1920px) {
-    
-}

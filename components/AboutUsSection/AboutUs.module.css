@@ -56,15 +56,9 @@
     
     .aboutUsContent {
         
-        grid-column: 2 / 8; 
+        grid-column: 1 / 9; 
     }
     
-
-    
-}
-
-/* Media Query for Large Desktops */
-@media (min-width: 1280px) {
     .aboutUsParagraph {
         display: none;
     }
@@ -72,13 +66,22 @@
     .aboutUsParagraphDesktop {
         display: block;
     }
+
+    
+}
+
+/* Media Query for Large Desktops */
+@media (min-width: 1280px) {
+    
     
     .daisychainVectorFlower {
         grid-column: 6 / 8;
+        width: 65%;
     }
     
     .aboutUsContent {
-        
-        grid-column: 3 / 11; 
+        width: 80%;
+        justify-self: center;
+        grid-column: 2 / 12; 
     }
 }

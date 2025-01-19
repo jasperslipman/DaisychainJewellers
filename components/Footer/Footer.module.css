@@ -41,11 +41,11 @@
 /* Column 1 */
 .logoDiv {
   justify-self: center;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .daisychainFooterLogo {
-  width: 30%;
+  width: 20%;
   height: auto;
   align-self: center;
   justify-self: center;
@@ -196,7 +196,7 @@
   }
 
   .daisychainFooterLogo {
-    width: 60%;
+    width: 40%;
   }
 
   

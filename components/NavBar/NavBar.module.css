@@ -23,7 +23,7 @@
     grid-row: 1;
     width: 100%;
     align-self: center;
-    justify-self: start;
+    justify-self: flex-start;
     display: flex;
     padding: var(--s-padding);
     height: 100%;
