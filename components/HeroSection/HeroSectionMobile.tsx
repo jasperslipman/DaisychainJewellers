@@ -14,10 +14,12 @@ const HeroSectionMobile: React.FC = () => {
                 <Image
                     src="/images/photos/daisychain-background.jpg" 
                     alt="Daisychain Jewellers shop front"
-                    fill
                     className={styles.mobileHeroImage}
-                    loading="eager"
+                    layout="responsive"
                     priority 
+                    width={16}
+                    height={9}
+                    quality = {100}
                 />
             </div>
             <div className={`${styles.mobileHeroTextSection} main-section-padding section-horizontal-padding`}>

@@ -1,13 +1,5 @@
 /* ServicesSection.module.css */
-.service-text-content {
-    display: flex;
-    flex-direction: column;
-    padding: var(--xxxl-gap);
-    gap: var(--m-gap);
-    align-items: flex-start;
-    width: 50%;
-    align-self: center;
-}
+
 
 .servicesSection {
     background-color: var(--main-background-color);
@@ -24,6 +16,10 @@
     
     
     
+}
+
+.serviceParagraphDesktop {
+    display: none;
 }
 
 
@@ -126,7 +122,18 @@
     .serviceTextContent {
         align-items: flex-start;
         width: 50%;
-        padding: var(--xl-padding);
+        padding: var(--m-padding);
+    }
+
+    .serviceParagraph {
+        display: none;
+    }
+
+    .serviceParagraphDesktop {
+        color: var(--font-color-primary);
+        font-size: var(--body-font-size);
+        align-self: flex-start;
+        display: block;
     }
     
 }

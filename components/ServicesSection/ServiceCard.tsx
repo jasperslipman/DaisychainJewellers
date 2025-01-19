@@ -38,15 +38,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     >
       {/* Image Section */}
       <div className={styles.imageWrapper}>
-        <Image
-          src={imageSrc}
-          alt={altText}
-          fill 
-          style={{ objectFit: 'cover' }}
-          className={styles.serviceImage}
-          placeholder="blur"
-          blurDataURL="/images/photos/daisychain-engagement-wedding-image-blur.jpg" 
-        />
+      <Image
+        src={imageSrc}
+        alt={altText}
+        layout="responsive" 
+        width={3} 
+        height={2} 
+        style={{ objectFit: 'cover' }} 
+        className={styles.serviceImage}
+        loading="eager"
+        quality = {100}
+      />
       </div>
 
       {/* Text Content */}
@@ -55,6 +57,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <p className={styles.serviceParagraph}>{paragraph}</p>
         <p className={styles.serviceParagraph}>{paragraph2}</p>
         <p className={styles.serviceParagraph}>{paragraph3}</p>
+        <p className={styles.serviceParagraphDesktop}>
+          {`${paragraph} ${paragraph2}`}
+        </p>
+        <p className={styles.serviceParagraphDesktop}>{paragraph3}</p>
         <Link
           href="/coming-soon"
           aria-label={`Learn more about ${heading}`}
