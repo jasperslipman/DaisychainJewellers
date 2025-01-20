@@ -1,11 +1,16 @@
 .heroSection {
     width: 100%;
-    background-image: url("../../public/images/photos/daisychain-background.jpg"); 
+    background-image: url("/images/photos/daisychain-background.jpg");
     height: calc(95vh - var(--navbar-height));
     background-size: cover;
     background-position: center;
-    display: none;
-    
+    display: none; /* Ensure it's displayed */
+}
+
+@supports (background-image: url("data:image/webp;base64,UklGRhIAAABXRUJQVlA4IC4AAAAwAQCdASoAAAAPAQABAAAALwA=")) {
+    .heroSection {
+        background-image: url("/images/photos/daisychain-background.webp");
+    }
 }
 
 .heroContainer {

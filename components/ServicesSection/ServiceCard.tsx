@@ -45,7 +45,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         alt={altText}
         className={styles.serviceImage}
         loading="eager"
-        quality={100}
         fill
       />
       </div>

@@ -12,12 +12,11 @@ const HeroSectionMobile: React.FC = () => {
         >
             <div className={styles.mobileHeroImageContainer}>
                 <Image
-                    src="/images/photos/daisychain-background.jpg"
+                    src="/images/photos/daisychain-background-mobile.jpg"
                     alt="Daisychain Jewellers shop front"
                     className={styles.mobileHeroImage}
                     fill
                     priority
-                    quality={100}
                 />
             </div>
             <div className={`${styles.mobileHeroTextSection} main-section-padding section-horizontal-padding`}>
