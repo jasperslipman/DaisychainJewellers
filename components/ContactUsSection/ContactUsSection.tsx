@@ -200,9 +200,7 @@ const ContactUsSection: React.FC = () => {
             alt="Map showing the location of Daisychain Jewellers in Hemel Hempstead, Hertfordshire"
             fill
             className={styles.mapImage}
-            placeholder="blur"
-            blurDataURL="/images/photos/daisychain-engagement-wedding-image-blur.jpg"
-            priority={false}
+            loading="eager"
           />
         </div>
       </div>

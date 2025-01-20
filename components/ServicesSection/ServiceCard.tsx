@@ -31,6 +31,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <article
       id={sectionId}
+      role="region"
+      aria-labelledby={`${sectionId}-heading`}
       className={classNames(styles.serviceCard, {
         [styles.reversed]: isReversed,
       })}
@@ -41,13 +43,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <Image
         src={imageSrc}
         alt={altText}
-        layout="responsive" 
-        width={3} 
-        height={2} 
-        style={{ objectFit: 'cover' }} 
         className={styles.serviceImage}
         loading="eager"
-        quality = {100}
+        quality={100}
+        fill
       />
       </div>
 
@@ -66,7 +65,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           aria-label={`Learn more about ${heading}`}
           className="button"
         >
-          Learn More
+          {heading} 
         </Link>
       </div>
     </article>
