@@ -40,7 +40,7 @@ Here are the Google PageSpeed scores for the project:
 
 - **Frontend:**
   - **React:** Building dynamic and interactive user interfaces.
-  - **Next.js:** Enables server-side rendering and static site generation for improved performance and SEO.
+  - **Next.js:** static site generation for improved performance and SEO.
   - **TypeScript:** Adds static type checking to enhance code reliability and maintainability.
   - **HTML5 & CSS3:** Structures and styles the web pages with responsive and modern designs.
   
