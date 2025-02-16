@@ -1,7 +1,10 @@
 // ContactUsSection.tsx
 import React from 'react';
 import styles from './ContactUsSection.module.css';
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { FaPhone } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
 import Image from 'next/image';
 import Script from 'next/script';
 
@@ -137,7 +140,7 @@ const ContactUsSection: React.FC = () => {
           <div className={styles.contactDetail}>
             <h4 className={styles.contactHeading}>Telephone</h4>
             <p>
-              <FaPhoneAlt aria-hidden="true" />
+              <FaPhone aria-hidden="true" />
               <a
                 href="tel:01442236651"
                 aria-label="Call Daisychain Jewellers at 01442 236651"

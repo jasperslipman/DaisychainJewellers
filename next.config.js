@@ -1,11 +1,18 @@
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withBundleAnalyzer({
   reactStrictMode: true,
+
   images: {
-    domains: [], // Add external domains here if needed
-    deviceSizes: [480, 768, 1280, 1920], // Responsive breakpoints
-    imageSizes: [16, 32, 48, 64, 96], // Fixed image sizes
+    domains: [], 
+    deviceSizes: [480, 768, 1280, 1920], 
+    imageSizes: [16, 32, 48, 64, 96], 
+    formats: ['image/webp'], // Enables WebP for better performance
   },
+
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
@@ -14,6 +21,7 @@ const nextConfig = {
 
     return config;
   },
+
   async headers() {
     const isDev = process.env.NODE_ENV === 'development';
 
@@ -44,6 +52,7 @@ const nextConfig = {
       },
     ];
   },
-};
+});
 
 module.exports = nextConfig;
+

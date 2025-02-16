@@ -17,7 +17,8 @@ const HeroSectionDesktop: React.FC = () => {
                 </h1>
                 <h2 className={styles.heroSubHeader}>Boxmoor, Hemel Hempstead</h2>
                 <p className={styles.heroParagraph}>
-                    With many years of experience, an onsite workshop and showroom, we are bespoke jewellery designers and engagement &amp; wedding ring specialists. We also provide a range of services, from jewellery design to restoration, remodelling, polishing, and repair.
+                    With many years of experience, an onsite workshop and showroom, we are bespoke jewellery designers and engagement &amp; wedding ring specialists. 
+                    We also provide a range of services, from jewellery design to restoration, remodelling, polishing, and repair.
                 </p>
             </div>
             <div>

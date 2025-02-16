@@ -2,14 +2,18 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+// Keep Navbar and HeroSection because they're needed immediately
 import Navbar from '../components/NavBar/Navbar';
 import HeroSection from '../components/HeroSection/HeroSection';
-import AboutUs from '../components/AboutUsSection/AboutUs';
-import TestimonialCardsSection from '../components/TestimonialCardsSection/TestimonialCardsSection';
-import ServicesSection from '../components/ServicesSection/ServicesSection';
-import SeasonalSection from '../components/SeasonalSection/SeasonalSection';
-import ContactUsSection from '../components/ContactUsSection/ContactUsSection';
-import FooterSection from '../components/Footer/Footer';
+
+// Lazy load everything else
+const AboutUs = dynamic(() => import('../components/AboutUsSection/AboutUs'));
+const TestimonialCardsSection = dynamic(() => import('../components/TestimonialCardsSection/TestimonialCardsSection'));
+const ServicesSection = dynamic(() => import('../components/ServicesSection/ServicesSection'));
+const ContactUsSection = dynamic(() => import('../components/ContactUsSection/ContactUsSection'));
+const FooterSection = dynamic(() => import('../components/Footer/Footer'));
 
 export async function getStaticProps() {
   return {
@@ -37,7 +41,6 @@ const Home: React.FC = () => {
       <AboutUs />
       <TestimonialCardsSection />
       <ServicesSection />
-      <SeasonalSection />
       <ContactUsSection />
       <FooterSection />
     </>
