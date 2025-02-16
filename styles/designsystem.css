@@ -169,14 +169,14 @@ html {
     font-family: 'HeadingCustomFont';
     src: url('../public/fonts/noto-heading-font.woff2') format('woff2'),
          url('../public/fonts/noto-heading-font.woff') format('woff');
-    font-display: optional; 
+    font-display: swap; 
 }
 
 @font-face {
     font-family: 'BodyCustomFont';
     src: url('../public/fonts/noto-body-font.woff2') format('woff2'),
          url('../public/fonts/noto-body-font.woff') format('woff');
-    font-display: optional; 
+    font-display: swap; 
 } 
 
 @font-face {
@@ -184,7 +184,7 @@ html {
     src: url('../public/fonts/noto-body-font-italic.woff2') format('woff2'),
          url('../public/fonts/noto-body-font-italic.woff') format('woff');
     font-style: italic;
-    font-display: optional; 
+    font-display: swap; 
 }
 
 /* Breakpoints */ 
