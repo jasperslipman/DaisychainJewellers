@@ -8,7 +8,7 @@
     overflow: hidden;
     justify-self: center;
     grid-row: 1; 
-    width: 75%;
+    width: 50%;
 }
 
 .aboutUsContent {
@@ -27,6 +27,13 @@
     font-size: var(--body-font-size);
     color: var(--font-color-white); 
     text-align: center;
+}
+
+.aboutUsParagraphDesktop {
+    font-size: var(--body-font-size);
+    color: var(--font-color-white); 
+    text-align: center;
+    display: none;
 }
 
 /* Breakpoints */ 
@@ -49,21 +56,32 @@
     
     .aboutUsContent {
         
-        grid-column: 2 / 8; 
+        grid-column: 1 / 9; 
     }
     
+    .aboutUsParagraph {
+        display: none;
+    }
+
+    .aboutUsParagraphDesktop {
+        display: block;
+    }
 
     
 }
 
 /* Media Query for Large Desktops */
 @media (min-width: 1280px) {
+    
+    
     .daisychainVectorFlower {
         grid-column: 6 / 8;
+        width: 65%;
     }
     
     .aboutUsContent {
-        
-        grid-column: 3 / 11; 
+        width: 80%;
+        justify-self: center;
+        grid-column: 2 / 12; 
     }
 }

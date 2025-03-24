@@ -71,6 +71,7 @@ const TestimonialCardsSection: React.FC = () => {
                         <h2 id="testimonials-heading" className={styles.testimonialsCardsHeading}>
                             Testimonials
                         </h2>
+                        
                         <p className={styles.testimonialsCardsParagraph}>
                             Read what our customers have to say about their experiences with Daisychain Jewellers. 
                         </p>
@@ -78,6 +79,13 @@ const TestimonialCardsSection: React.FC = () => {
                         <p className={styles.testimonialsCardsParagraph}>
                             We're proud to share testimonials highlighting our craftsmanship, personalized service, and dedication to meeting all your bespoke jewellery needs.
                         </p>
+
+                        <p className={styles.testimonialsCardsParagraphDesktop}>
+                            Read what our customers have to say about their experiences with Daisychain Jewellers. 
+                            We're proud to share testimonials highlighting our craftsmanship, personalized service, and dedication to meeting all your bespoke jewellery needs.
+                        </p>
+
+                    
                     </div>
                     
                     <ul className={styles.testimonialsCardsHolder}>

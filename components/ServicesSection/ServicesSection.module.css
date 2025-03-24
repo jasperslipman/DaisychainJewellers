@@ -1,5 +1,6 @@
 /* ServicesSection.module.css */
 
+
 .servicesSection {
     background-color: var(--main-background-color);
 }
@@ -15,6 +16,10 @@
     
     
     
+}
+
+.serviceParagraphDesktop {
+    display: none;
 }
 
 
@@ -41,28 +46,29 @@
 .serviceParagraph {
     color: var(--font-color-primary);
     font-size: var(--body-font-size);
-    align-self: start;
+    align-self: flex-start;
 }
 
 .reversed {
     
 }
 
+
+
 .imageWrapper {
     position: relative;
     width: 100%;
     overflow: hidden;
-    aspect-ratio: 3 / 2;
+    padding-top: 66.666%; 
 }
 
-
-
-/* Fallback for browsers that don't support aspect-ratio */
-@supports not (aspect-ratio: 3 / 2) {
+@supports (aspect-ratio: 3 / 2) {
     .imageWrapper {
-        padding-top: 66.666%; /* 3:2 aspect ratio */
+        padding-top: 0; 
+        aspect-ratio: 3 / 2; 
     }
 }
+
 
 /* Media Query for Small Phones */
 @media (max-width: 479px) {
@@ -114,9 +120,20 @@
     }
 
     .serviceTextContent {
-        align-items: start;
+        align-items: flex-start;
         width: 50%;
-        padding: var(--xl-padding);
+        padding: var(--m-padding);
+    }
+
+    .serviceParagraph {
+        display: none;
+    }
+
+    .serviceParagraphDesktop {
+        color: var(--font-color-primary);
+        font-size: var(--body-font-size);
+        align-self: flex-start;
+        display: block;
     }
     
 }

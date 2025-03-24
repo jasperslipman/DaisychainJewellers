@@ -89,15 +89,7 @@
 
 }
 
-.service-text-content {
-    display: flex;
-    flex-direction: column;
-    padding: var(--xxxl-gap);
-    gap: var(--m-gap);
-    align-items: start;
-    width: 50%;
-    align-self: center;
-}
+
 
 #service-card-two {
     grid-column: 1 / 13;
@@ -154,7 +146,7 @@
 }
 
 .opening-days {
-    align-items: start;
+    align-items: flex-start;
 }
 /* Footer Div */ 
 

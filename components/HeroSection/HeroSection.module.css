@@ -1,14 +1,21 @@
 .heroSection {
     width: 100%;
-    background-image: url("../../public/images/photos/daisychain-background.jpg"); 
-    height: calc(95svh - var(--navbar-height));
+    background-image: url("/images/photos/daisychain-background.jpg");
+    height: calc(95vh - var(--navbar-height));
     background-size: cover;
     background-position: center;
-    
+    display: none; /* Ensure it's displayed */
+}
+
+@supports (background-image: url("data:image/webp;base64,UklGRhIAAABXRUJQVlA4IC4AAAAwAQCdASoAAAAPAQABAAAALwA=")) {
+    .heroSection {
+        background-image: url("/images/photos/daisychain-background.webp");
+    }
 }
 
 .heroContainer {
     height: 100%;
+    
 }
 
 .heroCard { 
@@ -36,14 +43,54 @@
 .heroParagraph {
     color: var(--font-color-black);
     font-size: var(--body-large-font-size);
-    font-weight: var(--font-weight-semi-bold);
+    font-weight: var(--font-weight-medium);
 }
 
 .heroSubHeader {
     color: var(--font-color-black);
 }
 
-/* Breakpoints */ 
+/* Hero Mobile */ 
+
+.mobileHeroImageContainer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+}
+
+.mobileHeroImage {
+    position: relative !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@supports (aspect-ratio: 16 / 9) {
+    .mobileHeroImageContainer {
+        padding-bottom: 0; 
+    }
+    .mobileHeroImage {
+        position: relative; 
+        height: auto; 
+        aspect-ratio: 16 / 9;
+    }
+}
+
+.mobileHeroTextSection {
+    background-color: var(--accent-color);
+    flex-direction: column;
+    gap: var(--m-gap);
+    display: flex;
+    
+   
+}
+
+
+
+/* Breakpoints */
 
 /* Media Query for Small Phones */
 @media (max-width: 479px) {
@@ -58,9 +105,17 @@
 /* Media Query for Tablets */
 @media (min-width: 768px) {
     .heroCard { 
-        padding: var(--m-gap);
-        grid-column: 1 / 7;
+        padding: var(--l-gap);
+        grid-column: 1 / 6;
         gap: var(--m-gap);
+    }
+
+    .heroSection {
+        display: block;
+    }
+
+    .heroSectionMobile {
+        display: none;
     }
     
 

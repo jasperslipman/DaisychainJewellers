@@ -2,13 +2,11 @@
 import React from 'react';
 import Script from 'next/script';
 import styles from './Footer.module.css';
-import {
-  FaInstagram,
-  FaFacebookF,
-  FaPhoneAlt,
-  FaEnvelope,
-} from 'react-icons/fa';
-import DaisychainFullLogo from '../../public/images/logos/daisychainjewellers-full-logo.svg';
+import { FaPhone } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
+import DaisychainFullLogo from '../../public/images/logos/daisychainjewellers-full-logo.svg'; 
 
 const Footer: React.FC = () => {
   const structuredData = {
@@ -48,7 +46,7 @@ const Footer: React.FC = () => {
             aria-label="Daisychain Jewellers Home"
             className={styles.daisychainFooterLogo}
           >
-            <DaisychainFullLogo alt="Daisychain Jewellers Logo" />
+             <DaisychainFullLogo alt="Daisychain Jewellers Logo" /> 
           </a>
           <p className={styles.daisychainDescriptionParagraph}>
             We are a Family-Run Jewellers Based in Boxmoor, Hemel Hempstead with
@@ -101,7 +99,7 @@ const Footer: React.FC = () => {
             <div className={styles.contactDetail}>
               <h3 className={styles.footerSubHeading}>Telephone</h3>
               <p className={styles.footerBodyText}>
-                <FaPhoneAlt aria-hidden="true" />
+                <FaPhone aria-hidden="true" />
                 <a
                   href="tel:01442236651"
                   className={styles.contactLink}

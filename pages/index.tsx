@@ -1,27 +1,32 @@
+// pages/index.tsx
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import Navbar from '../components/NavBar/Navbar';
 import HeroSection from '../components/HeroSection/HeroSection';
-import AboutUs from '../components/AboutUsSection/AboutUs';
-import TestimonialCardsSection from '../components/TestimonialCardsSection/TestimonialCardsSection';
-import ServicesSection from '../components/ServicesSection/ServicesSection';
-import SeasonalSection from '../components/SeasonalSection/SeasonalSection';
-import ContactUsSection from '../components/ContactUsSection/ContactUsSection';
-import FooterSection from '../components/Footer/Footer';
 
-const Home: React.FC = () => {
+// Lazy load other components
+const AboutUs = dynamic(() => import('../components/AboutUsSection/AboutUs'));
+const TestimonialCardsSection = dynamic(() => import('../components/TestimonialCardsSection/TestimonialCardsSection'));
+const ServicesSection = dynamic(() => import('../components/ServicesSection/ServicesSection'));
+const ContactUsSection = dynamic(() => import('../components/ContactUsSection/ContactUsSection'));
+const FooterSection = dynamic(() => import('../components/Footer/Footer'));
+
+interface HomeProps {
+  // Define any props your component might receive
+}
+
+const Home: React.FC<HomeProps> = (props) => {
   return (
     <>
       <Head>
         <title>Daisychain Jewellers - Bespoke Engagement & Wedding Rings in Hertfordshire</title>
         <meta
           name="description"
-          content="Discover Daisychain Jewellers in Hemel Hempstead, Hertfordshire, offering bespoke engagement and wedding rings, jewellery repair & restoreration, and expert craftsmanship."
+          content="Discover Daisychain Jewellers in Hemel Hempstead, Hertfordshire, offering bespoke engagement and wedding rings, jewellery repair & restoration, and expert craftsmanship."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://www.daisychainjewellers.co.uk/" />
-
         <link rel="icon" href="/images/logos/daisychain-vector-flower.svg" type="image/svg+xml" />
       </Head>
       <Navbar />
@@ -29,7 +34,6 @@ const Home: React.FC = () => {
       <AboutUs />
       <TestimonialCardsSection />
       <ServicesSection />
-      <SeasonalSection />
       <ContactUsSection />
       <FooterSection />
     </>
@@ -37,3 +41,15 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+export async function getServerSideProps() {
+  // Fetch data if needed
+  // const res = await fetch('https://api.example.com/data');
+  // const data = await res.json();
+
+  return {
+    props: {
+      // data,
+    },
+  };
+}

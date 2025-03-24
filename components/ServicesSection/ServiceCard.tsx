@@ -31,6 +31,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <article
       id={sectionId}
+      role="region"
+      aria-labelledby={`${sectionId}-heading`}
       className={classNames(styles.serviceCard, {
         [styles.reversed]: isReversed,
       })}
@@ -38,15 +40,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     >
       {/* Image Section */}
       <div className={styles.imageWrapper}>
-        <Image
-          src={imageSrc}
-          alt={altText}
-          fill // Use 'fill' for responsive images
-          style={{ objectFit: 'cover' }}
-          className={styles.serviceImage}
-          placeholder="blur"
-          blurDataURL="/images/photos/daisychain-engagement-wedding-image-blur.jpg" // Ensure this path is correct
-        />
+      <Image
+        src={imageSrc}
+        alt={altText}
+        className={styles.serviceImage}
+        loading="eager"
+        fill
+      />
       </div>
 
       {/* Text Content */}
@@ -55,12 +55,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <p className={styles.serviceParagraph}>{paragraph}</p>
         <p className={styles.serviceParagraph}>{paragraph2}</p>
         <p className={styles.serviceParagraph}>{paragraph3}</p>
+        <p className={styles.serviceParagraphDesktop}>
+          {`${paragraph} ${paragraph2}`}
+        </p>
+        <p className={styles.serviceParagraphDesktop}>{paragraph3}</p>
         <Link
           href="/coming-soon"
           aria-label={`Learn more about ${heading}`}
           className="button"
         >
-          Learn More
+          {heading} 
         </Link>
       </div>
     </article>

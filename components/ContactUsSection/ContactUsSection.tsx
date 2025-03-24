@@ -1,7 +1,10 @@
 // ContactUsSection.tsx
 import React from 'react';
 import styles from './ContactUsSection.module.css';
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { FaPhone } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
 import Image from 'next/image';
 import Script from 'next/script';
 
@@ -11,7 +14,7 @@ const ContactUsSection: React.FC = () => {
     "@type": "JewelryStore",
     "name": "Daisychain Jewellers",
     "url": "https://www.daisychainjewellers.co.uk",
-    "telephone": "01442 236651",
+    "telephone": "+441442236651",
     "email": "marc@daisychainjewellers.co.uk",
     "address": {
       "@type": "PostalAddress",
@@ -31,7 +34,7 @@ const ContactUsSection: React.FC = () => {
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
+        "opens": "09:30",
         "closes": "17:00"
       },
       {
@@ -91,23 +94,23 @@ const ContactUsSection: React.FC = () => {
                 </tr>
                 <tr>
                   <th scope="row">Tuesday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Wednesday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Thursday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Friday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Saturday</th>
-                  <td>9am - 5pm</td>
+                  <td>9:30am - 5pm</td>
                 </tr>
                 <tr>
                   <th scope="row">Sunday</th>
@@ -137,7 +140,7 @@ const ContactUsSection: React.FC = () => {
           <div className={styles.contactDetail}>
             <h4 className={styles.contactHeading}>Telephone</h4>
             <p>
-              <FaPhoneAlt aria-hidden="true" />
+              <FaPhone aria-hidden="true" />
               <a
                 href="tel:01442236651"
                 aria-label="Call Daisychain Jewellers at 01442 236651"
@@ -200,9 +203,7 @@ const ContactUsSection: React.FC = () => {
             alt="Map showing the location of Daisychain Jewellers in Hemel Hempstead, Hertfordshire"
             fill
             className={styles.mapImage}
-            placeholder="blur"
-            blurDataURL="/images/photos/daisychain-engagement-wedding-image-blur.jpg"
-            priority={false}
+            loading="eager"
           />
         </div>
       </div>
